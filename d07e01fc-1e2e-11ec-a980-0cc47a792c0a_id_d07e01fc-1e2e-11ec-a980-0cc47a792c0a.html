@@ -1,0 +1,903 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_005{font-family:"Calibri Bold",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_005{font-family:"Calibri Bold",serif;font-size:22.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:28.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:28.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_002{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:"Calibri Bold",serif;font-size:20.1px;color:rgb(49,49,49);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_010{font-family:"Calibri Bold",serif;font-size:20.1px;color:rgb(49,49,49);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_014{font-family:"Calibri Bold",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_014{font-family:"Calibri Bold",serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_016{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_016{font-family:"Calibri Bold",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:"Calibri Bold Italic",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+div.cls_022{font-family:"Calibri Bold Italic",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_023{font-family:"Calibri Italic",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_023{font-family:"Calibri Italic",serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_025{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Courier New,serif;font-size:10.0px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Courier New,serif;font-size:10.0px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Courier New,serif;font-size:10.0px;color:rgb(161,19,19);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Courier New,serif;font-size:10.0px;color:rgb(161,19,19);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Courier New,serif;font-size:10.0px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Courier New,serif;font-size:10.0px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_037{font-family:"Consolas",serif;font-size:9.5px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_037{font-family:"Consolas",serif;font-size:9.5px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_038{font-family:"Consolas",serif;font-size:9.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_038{font-family:"Consolas",serif;font-size:9.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_040{font-family:Courier New,serif;font-size:10.0px;color:rgb(146,146,146);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_040{font-family:Courier New,serif;font-size:10.0px;color:rgb(146,146,146);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_041{font-family:Courier New,serif;font-size:10.0px;color:rgb(0,128,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_041{font-family:Courier New,serif;font-size:10.0px;color:rgb(0,128,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_042{font-family:Courier New,serif;font-size:10.0px;color:rgb(43,145,173);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_042{font-family:Courier New,serif;font-size:10.0px;color:rgb(43,145,173);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Courier New,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Courier New,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_045{font-family:"Consolas",serif;font-size:9.5px;color:rgb(43,145,173);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_045{font-family:"Consolas",serif;font-size:9.5px;color:rgb(43,145,173);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_046{font-family:"Consolas",serif;font-size:9.5px;color:rgb(161,19,19);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_046{font-family:"Consolas",serif;font-size:9.5px;color:rgb(161,19,19);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_047{font-family:"Consolas",serif;font-size:9.5px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_047{font-family:"Consolas",serif;font-size:9.5px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_054{font-family:"Calibri Bold",serif;font-size:16.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_054{font-family:"Calibri Bold",serif;font-size:16.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_069{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_069{font-family:"Calibri",serif;font-size:11.1px;color:rgb(0,0,255);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_064{font-family:"Calibri Bold",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_064{font-family:"Calibri Bold",serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_011{font-family:"Calibri Bold",serif;font-size:20.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_011{font-family:"Calibri Bold",serif;font-size:20.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background01.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:91.46px" class="cls_005"><span class="cls_005">1: Introduction to WPF</span></div>
+<div style="position:absolute;left:72.02px;top:134.66px" class="cls_007"><span class="cls_007">Getting started with WPF using</span></div>
+<div style="position:absolute;left:72.02px;top:168.62px" class="cls_007"><span class="cls_007">Visual Studio 2019</span></div>
+<div style="position:absolute;left:72.02px;top:227.78px" class="cls_002"><span class="cls_002">Windows Presentation Foundation, also known as WPF is a sub-system of .NET family for building a</span></div>
+<div style="position:absolute;left:72.02px;top:243.29px" class="cls_002"><span class="cls_002">Windows desktop application. WPF uses XAML as its user interface scripting language and C# as its code-</span></div>
+<div style="position:absolute;left:72.02px;top:258.65px" class="cls_002"><span class="cls_002">behind programming language. In other words, all user interfaces such as windows, pages, controls,</span></div>
+<div style="position:absolute;left:72.02px;top:274.13px" class="cls_002"><span class="cls_002">menus, and navigations are written in XAML and their code-behind is written using C# language.</span></div>
+<div style="position:absolute;left:72.02px;top:299.57px" class="cls_002"><span class="cls_002">This chapter is a swift taste of WPF and its capabilities. In this chapter, you will gain an understanding of</span></div>
+<div style="position:absolute;left:72.02px;top:314.81px" class="cls_002"><span class="cls_002">how to build your first WPF application using C# and Visual Studio 2019.</span></div>
+<div style="position:absolute;left:72.02px;top:341.81px" class="cls_010"><span class="cls_010">Prerequisites</span></div>
+<div style="position:absolute;left:72.02px;top:370.49px" class="cls_002"><span class="cls_002">Prerequisites for building WPF applications include the following:</span></div>
+<div style="position:absolute;left:90.02px;top:395.81px" class="cls_002"><span class="cls_002">1.   Visual Studio 2019 Community or other editions</span></div>
+<div style="position:absolute;left:90.02px;top:411.31px" class="cls_002"><span class="cls_002">2.   C# and Object-Oriented Programming concepts</span></div>
+<div style="position:absolute;left:90.02px;top:426.79px" class="cls_002"><span class="cls_002">3.   Understanding of XAML language and its syntaxes</span></div>
+<div style="position:absolute;left:72.02px;top:457.39px" class="cls_014"><span class="cls_014">1.</span></div>
+<div style="position:absolute;left:90.02px;top:460.39px" class="cls_016"><span class="cls_016">Visual Studio 2019 </span><span class="cls_002">Community, developed by Microsoft, is a fully-featured, extensible, free and one</span></div>
+<div style="position:absolute;left:90.02px;top:475.63px" class="cls_002"><span class="cls_002">of the most popular IDEs for building various software applications for desktop, Web, cloud,</span></div>
+<div style="position:absolute;left:90.02px;top:490.87px" class="cls_002"><span class="cls_002">libraries, and mobile. You may download Visual Studio 2019 Community from the URL specified in</span></div>
+<div style="position:absolute;left:90.02px;top:506.11px" class="cls_002"><span class="cls_002">the references section of this chapter or just Google it. Please make sure to download and install</span></div>
+<div style="position:absolute;left:90.02px;top:521.47px" class="cls_002"><span class="cls_002">Visual Studio 2019 or other editions if you do not have it before you proceed further. Make sure to</span></div>
+<div style="position:absolute;left:90.02px;top:536.71px" class="cls_002"><span class="cls_002">select the .NET Desktop development option from available packages. Which will install all basic</span></div>
+<div style="position:absolute;left:90.02px;top:551.95px" class="cls_002"><span class="cls_002">libraries and configurations that you need to develop a WPF application.</span></div>
+<div style="position:absolute;left:72.02px;top:582.34px" class="cls_014"><span class="cls_014">2.</span></div>
+<div style="position:absolute;left:90.02px;top:585.34px" class="cls_016"><span class="cls_016">C# </span><span class="cls_002">is a programming language developed by Microsoft. If you’re not familiar with C#, please find a</span></div>
+<div style="position:absolute;left:90.02px;top:599.98px" class="cls_002"><span class="cls_002">link for the free C# Programming book in the references section.</span></div>
+<div style="position:absolute;left:90.02px;top:615.46px" class="cls_002"><span class="cls_002">Note: We are using C# 9, for all the examples used in the book.</span></div>
+<div style="position:absolute;left:72.02px;top:646.06px" class="cls_014"><span class="cls_014">3.</span></div>
+<div style="position:absolute;left:90.02px;top:649.06px" class="cls_016"><span class="cls_016">XAML </span><span class="cls_002">stands for Extensible Application Markup Language is a scripting language to build user</span></div>
+<div style="position:absolute;left:90.02px;top:663.70px" class="cls_002"><span class="cls_002">interfaces for windows client applications. XAML has similar syntaxes as XML.</span></div>
+<div style="position:absolute;left:90.02px;top:688.90px" class="cls_002"><span class="cls_002">To learn XAML in-depth, find a reference for an eBook at the end of this chapter.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background02.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:121.82px" class="cls_010"><span class="cls_010">What is WPF</span></div>
+<div style="position:absolute;left:72.02px;top:150.62px" class="cls_002"><span class="cls_002">WPF is a UI framework, designed to create attractive graphical user interfaces for Windows desktop.</span></div>
+<div style="position:absolute;left:72.02px;top:166.10px" class="cls_002"><span class="cls_002">WPF is a part of Microsoft’s .NET ecosystem and gets installed as a part of .NET and Visual Studio. WPF</span></div>
+<div style="position:absolute;left:72.02px;top:181.58px" class="cls_002"><span class="cls_002">applications are developed using Visual Studio IDE.</span></div>
+<div style="position:absolute;left:72.02px;top:206.90px" class="cls_002"><span class="cls_002">WPF is not a replacement for Windows Forms. WPF was developed to replace Windows Forms but some</span></div>
+<div style="position:absolute;left:72.02px;top:220.34px" class="cls_002"><span class="cls_002">developers and businesses did not want to give up Windows Forms. Today, both Windows Forms and</span></div>
+<div style="position:absolute;left:72.02px;top:233.78px" class="cls_002"><span class="cls_002">WPF are supported in Visual Studio to build windows client applications. You can also use Windows</span></div>
+<div style="position:absolute;left:72.02px;top:247.25px" class="cls_002"><span class="cls_002">Forms controls in WPF and vice versa.</span></div>
+<div style="position:absolute;left:72.02px;top:270.77px" class="cls_002"><span class="cls_002">WPF is modern, fast, and more dynamic. WPF provides a rich set of 2D and 3D graphics as well as</span></div>
+<div style="position:absolute;left:72.02px;top:284.21px" class="cls_002"><span class="cls_002">multimedia controls. It is a set of rich controls, advanced layouts, and beautiful styles and themes. WPF</span></div>
+<div style="position:absolute;left:72.02px;top:297.65px" class="cls_002"><span class="cls_002">also supports advanced features such as navigation controls, upgraded rendering process, and flexible</span></div>
+<div style="position:absolute;left:72.02px;top:310.97px" class="cls_002"><span class="cls_002">data binding.</span></div>
+<div style="position:absolute;left:72.02px;top:334.49px" class="cls_014"><span class="cls_014">Hello, WPF!</span></div>
+<div style="position:absolute;left:72.02px;top:354.05px" class="cls_002"><span class="cls_002">Let’s create a simple Hello WPF application using Visual Studio 2019 Community.</span></div>
+<div style="position:absolute;left:72.02px;top:377.33px" class="cls_014"><span class="cls_014">Create a new project in Visual Studio</span></div>
+<div style="position:absolute;left:72.02px;top:404.57px" class="cls_002"><span class="cls_002">Create a new project in Visual Studio by opening Visual Studio and selecting New Project. When you</span></div>
+<div style="position:absolute;left:72.02px;top:418.15px" class="cls_002"><span class="cls_002">open Visual Studio 2019, you will see on the left side a list of your previous projects. On the right side,</span></div>
+<div style="position:absolute;left:72.02px;top:431.71px" class="cls_002"><span class="cls_002">you will see various options including </span><span class="cls_016">Create a new project</span><span class="cls_002">. See Figure 1.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background03.jpg" width=612 height=792></div>
+<div style="position:absolute;left:288.29px;top:398.45px" class="cls_002"><span class="cls_002">Figure 1</span></div>
+<div style="position:absolute;left:72.02px;top:424.75px" class="cls_002"><span class="cls_002">Select Create a new project on the above screen.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background04.jpg" width=612 height=792></div>
+<div style="position:absolute;left:288.29px;top:95.18px" class="cls_002"><span class="cls_002">Figure 2</span></div>
+<div style="position:absolute;left:72.02px;top:110.42px" class="cls_002"><span class="cls_002">On the next screen, you can filter based on a language, a platform, and a project type.</span></div>
+<div style="position:absolute;left:72.02px;top:137.42px" class="cls_002"><span class="cls_002">Select C#, Windows, and Desktop from the dropdowns respectively. See in Figure 2.</span></div>
+<div style="position:absolute;left:72.02px;top:164.30px" class="cls_002"><span class="cls_002">In the available WPF templates, you will notice there are two templates for WPF App - WPF App (.NET</span></div>
+<div style="position:absolute;left:72.02px;top:177.86px" class="cls_002"><span class="cls_002">Framework) and WPF App (.NET).</span></div>
+<div style="position:absolute;left:72.02px;top:204.38px" class="cls_002"><span class="cls_002">.NET Framework and .NET are the different versions of the .NET family; .NET Framework is the older so</span></div>
+<div style="position:absolute;left:72.02px;top:217.82px" class="cls_002"><span class="cls_002">we are ignoring .NET Framework here. We will use .NET only.</span></div>
+<div style="position:absolute;left:208.85px;top:246.89px" class="cls_016"><span class="cls_016">Note: .NET 5.0 is the latest version of .NET.</span></div>
+<div style="position:absolute;left:72.02px;top:277.61px" class="cls_002"><span class="cls_002">After clicking on a Next Button you will be directed to a configuration screen as shown in Figure 3, It has</span></div>
+<div style="position:absolute;left:72.02px;top:291.05px" class="cls_002"><span class="cls_002">the following fields.</span></div>
+<div style="position:absolute;left:90.02px;top:304.85px" class="cls_002"><span class="cls_002">●</span><span class="cls_012"> </span><span class="cls_002">  In the </span><span class="cls_016">Project Name </span><span class="cls_002">text box, type the name of your project. We are naming our project</span></div>
+<div style="position:absolute;left:108.14px;top:320.09px" class="cls_016"><span class="cls_016">HelloWPFSample</span><span class="cls_002">. You can name your project as you desire.</span></div>
+<div style="position:absolute;left:90.02px;top:335.93px" class="cls_002"><span class="cls_002">●</span><span class="cls_012"> </span><span class="cls_002">  The </span><span class="cls_016">Location </span><span class="cls_002">text box lets you browse a folder where you would like to create your new</span></div>
+<div style="position:absolute;left:108.14px;top:351.53px" class="cls_002"><span class="cls_002">application.</span></div>
+<div style="position:absolute;left:90.02px;top:367.01px" class="cls_002"><span class="cls_002">●</span><span class="cls_012"> </span><span class="cls_002">  The </span><span class="cls_016">Solution </span><span class="cls_002">is a container for one or more projects in Visual Studio, you can even change the</span></div>
+<div style="position:absolute;left:108.14px;top:382.49px" class="cls_002"><span class="cls_002">solution name by first unchecking the checkbox which says </span><span class="cls_016">“Place the solution and project in</span></div>
+<div style="position:absolute;left:108.14px;top:397.97px" class="cls_016"><span class="cls_016">the same directory” </span><span class="cls_002">and which will enable the </span><span class="cls_016">Solution Name </span><span class="cls_002">text box.</span></div>
+<div style="position:absolute;left:288.29px;top:698.50px" class="cls_002"><span class="cls_002">Figure 3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3208px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background05.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:110.42px" class="cls_022"><span class="cls_022">Tip: </span><span class="cls_023">If you are developing a project in the .NET Framework, then you will have one more field to select</span></div>
+<div style="position:absolute;left:72.02px;top:125.90px" class="cls_023"><span class="cls_023">the version of .NET Framework. As shown in Figure 4. Select </span><span class="cls_022">.NET Framework 4.7.2 </span><span class="cls_023">or newer versions in</span></div>
+<div style="position:absolute;left:72.02px;top:141.26px" class="cls_023"><span class="cls_023">the framework version dropdown as per your project’s requirements</span><span class="cls_022">.</span></div>
+<div style="position:absolute;left:288.17px;top:443.71px" class="cls_002"><span class="cls_002">Figure 4</span></div>
+<div style="position:absolute;left:72.02px;top:459.31px" class="cls_002"><span class="cls_002">Now click the Create button. This action creates a WPF project with some necessary files already added</span></div>
+<div style="position:absolute;left:72.02px;top:472.75px" class="cls_002"><span class="cls_002">inside a project. Figure 4 shows the default Visual Studio solution.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4010px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background06.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:122.06px" class="cls_014"><span class="cls_014">Understanding project and files</span></div>
+<div style="position:absolute;left:288.29px;top:395.69px" class="cls_002"><span class="cls_002">Figure 5</span></div>
+<div style="position:absolute;left:72.02px;top:423.31px" class="cls_002"><span class="cls_002">As you can see from Figure 5, there are 4 major sections. Such as 1. UI Designer, 2. XAML Editor,</span></div>
+<div style="position:absolute;left:72.02px;top:436.75px" class="cls_002"><span class="cls_002">3. Solution Explorer, and 4. Properties.</span></div>
+<div style="position:absolute;left:90.02px;top:464.11px" class="cls_002"><span class="cls_002">1.</span><span class="cls_012"> </span><span class="cls_016">  The UI Designer </span><span class="cls_002">is a window where you can drag and drop elements from a toolbox. We can set</span></div>
+<div style="position:absolute;left:108.14px;top:477.43px" class="cls_002"><span class="cls_002">layouts such as grid or wrap panel etc. and can arrange other UI elements inside the layout</span></div>
+<div style="position:absolute;left:108.14px;top:490.87px" class="cls_002"><span class="cls_002">panel. As soon as you drag an element from the toolbox and drop it to the designer, you will</span></div>
+<div style="position:absolute;left:108.14px;top:504.31px" class="cls_002"><span class="cls_002">notice that the XAML code is automatically written for you by the designer.</span></div>
+<div style="position:absolute;left:90.02px;top:529.87px" class="cls_002"><span class="cls_002">2.</span><span class="cls_012"> </span><span class="cls_016">  XAML Editor</span><span class="cls_002">: code for each UI element is present inside a XAML file, using XAML editor we can</span></div>
+<div style="position:absolute;left:108.14px;top:543.19px" class="cls_002"><span class="cls_002">position, align, style UI elements, add animations etc.</span></div>
+<div style="position:absolute;left:90.02px;top:568.87px" class="cls_002"><span class="cls_002">3.</span><span class="cls_012"> </span><span class="cls_016">  The Solution Explorer </span><span class="cls_002">is like a tree view that lists all the projects which are created under the</span></div>
+<div style="position:absolute;left:108.14px;top:582.22px" class="cls_002"><span class="cls_002">same solution and all the files of those projects. By default, you will see there are 3 nodes</span></div>
+<div style="position:absolute;left:108.14px;top:595.66px" class="cls_002"><span class="cls_002">created by default for your project - </span><span class="cls_016">Dependencies</span><span class="cls_002">, </span><span class="cls_016">App.xaml, </span><span class="cls_002">and </span><span class="cls_016">MainWindow.xaml</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:126.14px;top:609.46px" class="cls_002"><span class="cls_002">●</span><span class="cls_012"> </span><span class="cls_016">  Dependencies </span><span class="cls_002">is where we can add references to this project.</span></div>
+<div style="position:absolute;left:126.14px;top:622.90px" class="cls_002"><span class="cls_002">●</span><span class="cls_012"> </span><span class="cls_016">  The App.xaml </span><span class="cls_002">file is an application file which stores resources which are applicable</span></div>
+<div style="position:absolute;left:144.14px;top:636.34px" class="cls_002"><span class="cls_002">across the entire application. We are going to discuss this in more detail in the following</span></div>
+<div style="position:absolute;left:144.14px;top:649.78px" class="cls_002"><span class="cls_002">chapters.</span></div>
+<div style="position:absolute;left:126.14px;top:663.34px" class="cls_002"><span class="cls_002">●</span><span class="cls_012"> </span><span class="cls_002">  In this chapter, our focus is on </span><span class="cls_016">MainWindow.xaml</span><span class="cls_002">. The </span><span class="cls_016">MainWindow.xaml </span><span class="cls_002">represents</span></div>
+<div style="position:absolute;left:144.14px;top:676.78px" class="cls_002"><span class="cls_002">the current Window that you see in the designer. As you can see in Figure 4, the XAML</span></div>
+<div style="position:absolute;left:144.14px;top:690.22px" class="cls_002"><span class="cls_002">editor has a </span><span class="cls_016">Window </span><span class="cls_002">and a </span><span class="cls_016">Grid. </span><span class="cls_002">These are UI elements; they have been added to the</span></div>
+<div style="position:absolute;left:144.14px;top:703.66px" class="cls_002"><span class="cls_002">XAML file by default.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4812px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background07.jpg" width=612 height=792></div>
+<div style="position:absolute;left:90.02px;top:108.38px" class="cls_002"><span class="cls_002">4.</span><span class="cls_012"> </span><span class="cls_016">  Properties window</span><span class="cls_002">: This window has different properties & events related to UI elements. We</span></div>
+<div style="position:absolute;left:108.14px;top:121.82px" class="cls_002"><span class="cls_002">will learn about Properties window in more detail in coming sub-chapters.</span></div>
+<div style="position:absolute;left:72.02px;top:149.66px" class="cls_002"><span class="cls_002">In WPF, each UI element can be represented in two ways.</span></div>
+<div style="position:absolute;left:92.30px;top:162.98px" class="cls_002"><span class="cls_002">1.   At design-time: By a XAML element, This can be achieved in further 2 ways.</span></div>
+<div style="position:absolute;left:128.42px;top:176.18px" class="cls_002"><span class="cls_002">a.   Drag and drop controls from the Toolbar.</span></div>
+<div style="position:absolute;left:128.42px;top:189.98px" class="cls_002"><span class="cls_002">b.   Manually typing a code for each UI control in XAML editor.</span></div>
+<div style="position:absolute;left:92.30px;top:203.30px" class="cls_002"><span class="cls_002">2.   At run-time by a code-behind class.</span></div>
+<div style="position:absolute;left:92.30px;top:216.50px" class="cls_002"><span class="cls_002">For example, the </span><span class="cls_016">XAML editor </span><span class="cls_002">represents a window at design-time. If you manually add elements</span></div>
+<div style="position:absolute;left:92.30px;top:229.94px" class="cls_002"><span class="cls_002">into X  ML, they will immediately appear on the window, the developer doesn’t have to run the</span></div>
+<div style="position:absolute;left:92.30px;top:243.41px" class="cls_002"><span class="cls_002">project to see the changes while the code-behind C# class represents a window at run-time, any</span></div>
+<div style="position:absolute;left:92.30px;top:256.85px" class="cls_002"><span class="cls_002">control added from code-behind won’t be available on windows at design time, one has to run the</span></div>
+<div style="position:absolute;left:92.30px;top:270.17px" class="cls_002"><span class="cls_002">project to see the changes.</span></div>
+<div style="position:absolute;left:72.02px;top:297.89px" class="cls_014"><span class="cls_014">1. Designing User Interfaces at compile/design time</span></div>
+<div style="position:absolute;left:108.14px;top:327.29px" class="cls_025"><span class="cls_025">a.</span><span class="cls_026"> </span><span class="cls_016"> Drag and drop controls from the Toolbar.</span></div>
+<div style="position:absolute;left:72.02px;top:355.61px" class="cls_002"><span class="cls_002">If you click on the </span><span class="cls_016">Toolbox </span><span class="cls_002">tab in the left side of your screen, you will see a </span><span class="cls_016">Toolbox </span><span class="cls_002">that lists all the</span></div>
+<div style="position:absolute;left:72.02px;top:369.05px" class="cls_002"><span class="cls_002">available WPF controls as you can see in Figure 6.</span></div>
+<div style="position:absolute;left:288.29px;top:667.90px" class="cls_002"><span class="cls_002">Figure 6</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background08.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:94.94px" class="cls_002"><span class="cls_002">Now to add controls to </span><span class="cls_016">MainWindow</span><span class="cls_002">, simply drag and drop controls from </span><span class="cls_016">Toolbox</span><span class="cls_002">. We are going to</span></div>
+<div style="position:absolute;left:72.02px;top:108.26px" class="cls_002"><span class="cls_002">drag and drop a </span><span class="cls_022">Button</span><span class="cls_002">, a </span><span class="cls_022">TextBox</span><span class="cls_002">, and a </span><span class="cls_022">ListBox </span><span class="cls_002">control from </span><span class="cls_016">Toolbox </span><span class="cls_002">to </span><span class="cls_016">MainWindow</span><span class="cls_002">. After moving</span></div>
+<div style="position:absolute;left:72.02px;top:121.70px" class="cls_002"><span class="cls_002">and placing controls around, my </span><span class="cls_016">MainWindow </span><span class="cls_002">looks like Figure 7.</span></div>
+<div style="position:absolute;left:288.29px;top:383.21px" class="cls_002"><span class="cls_002">Figure 7</span></div>
+<div style="position:absolute;left:72.02px;top:408.43px" class="cls_002"><span class="cls_002">Now one thing you may have noticed when you were dragging and positioning these controls in</span></div>
+<div style="position:absolute;left:72.02px;top:421.99px" class="cls_002"><span class="cls_002">MainWindow. The designer was writing XAML code for you. After placing these controls the same as</span></div>
+<div style="position:absolute;left:72.02px;top:435.55px" class="cls_002"><span class="cls_002">Figure 7, the XAML code looks like Listing 1.</span></div>
+<div style="position:absolute;left:72.02px;top:457.51px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Window </span><span class="cls_030">x</span><span class="cls_028">:</span><span class="cls_030">Class</span><span class="cls_028">="HelloWPFSample.MainWindow"</span></div>
+<div style="position:absolute;left:114.14px;top:468.79px" class="cls_030"><span class="cls_030">xmlns</span><A HREF="http://schemas.microsoft.com/winfx/2006/xaml/presentation">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</A> </span></div>
+<div style="position:absolute;left:114.14px;top:480.19px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">x</span><A HREF="http://schemas.microsoft.com/winfx/2006/xaml">="http://schemas.microsoft.com/winfx/2006/xaml"</A> </span></div>
+<div style="position:absolute;left:114.14px;top:491.47px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">d</span><A HREF="http://schemas.microsoft.com/expression/blend/2008">="http://schemas.microsoft.com/expression/blend/2008"</A> </span></div>
+<div style="position:absolute;left:114.14px;top:502.75px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">mc</span><A HREF="http://schemas.openxmlformats.org/markup-compatibility/2006">="http://schemas.openxmlformats.org/markup</A><span class="cls_028">-<A HREF="http://schemas.openxmlformats.org/markup-compatibility/2006">compatibility/2006"</A> </span></div>
+<div style="position:absolute;left:114.14px;top:514.15px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">local</span><span class="cls_028">="clr-namespace:HelloWPFSample"</span></div>
+<div style="position:absolute;left:114.14px;top:525.43px" class="cls_030"><span class="cls_030">mc</span><span class="cls_028">:</span><span class="cls_030">Ignorable</span><span class="cls_028">="d"</span></div>
+<div style="position:absolute;left:114.14px;top:537.07px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="300" </span><span class="cls_030">Width</span><span class="cls_028">="500"></span></div>
+<div style="position:absolute;left:72.02px;top:549.07px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid </span><span class="cls_030">x</span><span class="cls_028">:</span><span class="cls_030">Name</span><span class="cls_028">="OuterGrid"></span></div>
+<div style="position:absolute;left:120.14px;top:560.23px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid.RowDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:144.14px;top:571.75px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">RowDefinition </span><span class="cls_030">Height</span><span class="cls_028">="Auto"/></span></div>
+<div style="position:absolute;left:144.14px;top:583.06px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">RowDefinition </span><span class="cls_030">Height</span><span class="cls_028">="Auto"/></span></div>
+<div style="position:absolute;left:120.14px;top:594.22px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid.RowDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:120.14px;top:605.50px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid.ColumnDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:144.14px;top:616.90px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">ColumnDefinition</span><span class="cls_028">/></span></div>
+<div style="position:absolute;left:144.14px;top:628.30px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">ColumnDefinition</span><span class="cls_028">/></span></div>
+<div style="position:absolute;left:120.14px;top:639.58px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid.ColumnDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:120.14px;top:651.10px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">TextBox </span><span class="cls_030">Name</span><span class="cls_028">="textBox1"</span></div>
+<div style="position:absolute;left:174.14px;top:661.66px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="30"</span></div>
+<div style="position:absolute;left:174.14px;top:672.94px" class="cls_030"><span class="cls_030">HorizontalAlignment</span><span class="cls_028">="Left"</span></div>
+<div style="position:absolute;left:174.14px;top:684.22px" class="cls_030"><span class="cls_030">Margin</span><span class="cls_028">="5 10 0 0"</span></div>
+<div style="position:absolute;left:174.14px;top:695.62px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="207" /></span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6416px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background09.jpg" width=612 height=792></div>
+<div style="position:absolute;left:126.14px;top:94.70px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Button </span><span class="cls_030">Name</span><span class="cls_028">="button1"</span></div>
+<div style="position:absolute;left:168.14px;top:105.26px" class="cls_030"><span class="cls_030">Content</span><span class="cls_028">="Button"</span></div>
+<div style="position:absolute;left:168.14px;top:116.66px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="30"</span></div>
+<div style="position:absolute;left:168.14px;top:127.94px" class="cls_030"><span class="cls_030">HorizontalAlignment</span><span class="cls_028">="Left"</span></div>
+<div style="position:absolute;left:168.14px;top:139.22px" class="cls_030"><span class="cls_030">Margin</span><span class="cls_028">="0 10 0 0"</span></div>
+<div style="position:absolute;left:168.14px;top:150.62px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="115"</span></div>
+<div style="position:absolute;left:168.14px;top:161.90px" class="cls_030"><span class="cls_030">Grid.Column</span><span class="cls_028">="1"/></span></div>
+<div style="position:absolute;left:120.14px;top:174.02px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">ListBox </span><span class="cls_030">Name</span><span class="cls_028">="listBox1"</span></div>
+<div style="position:absolute;left:174.14px;top:184.58px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="102"</span></div>
+<div style="position:absolute;left:174.14px;top:195.86px" class="cls_030"><span class="cls_030">HorizontalAlignment</span><span class="cls_028">="Left"</span></div>
+<div style="position:absolute;left:174.14px;top:207.26px" class="cls_030"><span class="cls_030">Margin</span><span class="cls_028">="5 10 0 0"</span></div>
+<div style="position:absolute;left:174.14px;top:218.54px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="360"</span></div>
+<div style="position:absolute;left:174.14px;top:229.82px" class="cls_030"><span class="cls_030">Grid.ColumnSpan</span><span class="cls_028">="2"</span></div>
+<div style="position:absolute;left:174.14px;top:241.25px" class="cls_030"><span class="cls_030">Grid.Row</span><span class="cls_028">="1"/></span></div>
+<div style="position:absolute;left:96.02px;top:253.37px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:72.02px;top:264.65px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Window</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:287.81px;top:276.53px" class="cls_002"><span class="cls_002">Listing 1</span></div>
+<div style="position:absolute;left:72.02px;top:299.81px" class="cls_002"><span class="cls_002">As you can see from Listing 1, there is separate XAML element for each of these controls i.e. Button,</span></div>
+<div style="position:absolute;left:72.02px;top:313.25px" class="cls_002"><span class="cls_002">TextBox, and ListBox. Each element also has Name, Width, Height, Margin, VerticalAlignment, and</span></div>
+<div style="position:absolute;left:72.02px;top:326.69px" class="cls_002"><span class="cls_002">HorizontalAlignment attributes set for these controls.</span></div>
+<div style="position:absolute;left:72.02px;top:350.33px" class="cls_002"><span class="cls_002">Finally, let’s just build and run the solution. The output would look like Figure 8.</span></div>
+<div style="position:absolute;left:288.29px;top:582.70px" class="cls_002"><span class="cls_002">Figure 8</span></div>
+<div style="position:absolute;left:72.02px;top:609.70px" class="cls_002"><span class="cls_002">Now here comes the best part. The XAML editor fully supports Intellisense. For example, the moment I</span></div>
+<div style="position:absolute;left:72.02px;top:623.14px" class="cls_002"><span class="cls_002">started typing &lt;Butt.. , you will see Button element is automatically loaded in Intellisense (see Figure 9).</span></div>
+<div style="position:absolute;left:72.02px;top:636.58px" class="cls_002"><span class="cls_002">So you don’t have to rely on the designer completely. You can even manually write your X  ML code if</span></div>
+<div style="position:absolute;left:72.02px;top:650.02px" class="cls_002"><span class="cls_002">you like.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:7218px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background10.jpg" width=612 height=792></div>
+<div style="position:absolute;left:288.29px;top:287.69px" class="cls_002"><span class="cls_002">Figure 9</span></div>
+<div style="position:absolute;left:72.02px;top:314.93px" class="cls_002"><span class="cls_002">Similarly, we can also edit and change existing XAML manually. You will also notice that as soon you edit</span></div>
+<div style="position:absolute;left:72.02px;top:328.37px" class="cls_002"><span class="cls_002">XAML, your UI will be updated automatically with your changes.</span></div>
+<div style="position:absolute;left:108.14px;top:351.89px" class="cls_016"><span class="cls_016">b.  Manually typing a code for each UI control in XAML editor.</span></div>
+<div style="position:absolute;left:72.02px;top:379.01px" class="cls_035"><span class="cls_035">Experience</span><span class="cls_002">d </span><span class="cls_035">WPF developers leave the habit of dragging and dropping UI controls from</span></div>
+<div style="position:absolute;left:72.02px;top:393.17px" class="cls_035"><span class="cls_035">Toolbox, and start typing code for each control manu</span><span class="cls_002">ally, t</span><span class="cls_035">his gives </span><span class="cls_002">a </span><span class="cls_035">better understanding of</span></div>
+<div style="position:absolute;left:72.02px;top:407.35px" class="cls_035"><span class="cls_035">control and its various properties. </span><span class="cls_002">You will catch this habit with practice. It is not different from the</span></div>
+<div style="position:absolute;left:72.02px;top:421.63px" class="cls_002"><span class="cls_002">first approach, the code is the same. The only difference is that you code it with sound knowledge.</span></div>
+<div style="position:absolute;left:72.02px;top:435.19px" class="cls_002"><span class="cls_002">Next, step is to add properties of these controls at design time. There are two ways to add properties.</span></div>
+<div style="position:absolute;left:90.02px;top:462.79px" class="cls_002"><span class="cls_002">1.   Using properties window</span></div>
+<div style="position:absolute;left:90.02px;top:486.19px" class="cls_002"><span class="cls_002">2.   Manually typing a code for each property in XAML editor</span></div>
+<div style="position:absolute;left:72.02px;top:513.55px" class="cls_002"><span class="cls_002">1.   Using the properties window.</span></div>
+<div style="position:absolute;left:90.02px;top:526.99px" class="cls_002"><span class="cls_002">To see the properties of an element. We need to select that control in the UI designer or a XAML</span></div>
+<div style="position:absolute;left:90.02px;top:540.43px" class="cls_002"><span class="cls_002">editor and then press the F4 key. This will trigger the properties window to show. As per Figure 10,</span></div>
+<div style="position:absolute;left:90.02px;top:553.87px" class="cls_002"><span class="cls_002">you can see the red highlighted section are the properties window for a Button.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8020px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background11.jpg" width=612 height=792></div>
+<div style="position:absolute;left:285.53px;top:422.35px" class="cls_002"><span class="cls_002">Figure 10</span></div>
+<div style="position:absolute;left:72.02px;top:449.47px" class="cls_002"><span class="cls_002">Now there are 2 tabs - </span><span class="cls_016">Properties </span><span class="cls_002">and </span><span class="cls_016">Events</span><span class="cls_002">. (Highlighted part in the right-hand corner in Figure 10).</span></div>
+<div style="position:absolute;left:72.02px;top:472.75px" class="cls_002"><span class="cls_002">These fields are used to set properties and events for a control respectively. Figure 11 shows how you</span></div>
+<div style="position:absolute;left:72.02px;top:486.07px" class="cls_002"><span class="cls_002">can change the </span><span class="cls_016">Content </span><span class="cls_002">property of a </span><span class="cls_016">Button </span><span class="cls_002">to </span><span class="cls_016">Add Item</span><span class="cls_002">. And Figure 10 shows how you can add a </span><span class="cls_016">Click</span></div>
+<div style="position:absolute;left:72.02px;top:499.51px" class="cls_002"><span class="cls_002">event handler to the </span><span class="cls_016">Button</span><span class="cls_002">.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8822px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background12.jpg" width=612 height=792></div>
+<div style="position:absolute;left:285.65px;top:373.97px" class="cls_002"><span class="cls_002">Figure 11</span></div>
+<div style="position:absolute;left:285.65px;top:629.74px" class="cls_002"><span class="cls_002">Figure 12</span></div>
+<div style="position:absolute;left:72.02px;top:679.54px" class="cls_002"><span class="cls_002">After making these changes in the properties window. If you check the XAML code for Button, you will</span></div>
+<div style="position:absolute;left:72.02px;top:693.10px" class="cls_002"><span class="cls_002">see the content attribute is changed and a click attribute is added as shown in Listing 2.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:9624px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background13.jpg" width=612 height=792></div>
+<div style="position:absolute;left:120.14px;top:94.70px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Button </span><span class="cls_030">Name</span><span class="cls_028">="button1"</span></div>
+<div style="position:absolute;left:168.14px;top:105.26px" class="cls_030"><span class="cls_030">Click</span><span class="cls_028">="AddItemClick"</span></div>
+<div style="position:absolute;left:168.14px;top:116.66px" class="cls_030"><span class="cls_030">Content</span><span class="cls_028">="Add Item"</span></div>
+<div style="position:absolute;left:168.14px;top:127.94px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="30"</span></div>
+<div style="position:absolute;left:168.14px;top:139.22px" class="cls_030"><span class="cls_030">HorizontalAlignment</span><span class="cls_028">="Left"</span></div>
+<div style="position:absolute;left:168.14px;top:150.62px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="107"</span></div>
+<div style="position:absolute;left:168.14px;top:161.90px" class="cls_030"><span class="cls_030">VerticalAlignment</span><span class="cls_028">="Top"/></span></div>
+<div style="position:absolute;left:287.81px;top:186.50px" class="cls_002"><span class="cls_002">Listing 2</span></div>
+<div style="position:absolute;left:72.02px;top:211.94px" class="cls_016"><span class="cls_016">Second approach: Manually typing a code for each property in XAML editor</span></div>
+<div style="position:absolute;left:72.02px;top:239.18px" class="cls_002"><span class="cls_002">Another way we can set the properties is by coding manually. where you can directly code in XAML for</span></div>
+<div style="position:absolute;left:72.02px;top:252.65px" class="cls_002"><span class="cls_002">each property. So what if you don’t remember the name of each property? no worries we got</span></div>
+<div style="position:absolute;left:72.02px;top:266.09px" class="cls_002"><span class="cls_002">Intellisense to rescue. It is the same as coding manually for each control. If you know which properties</span></div>
+<div style="position:absolute;left:72.02px;top:279.53px" class="cls_002"><span class="cls_002">to use you can code them directly and avoid navigating to the Properties window.</span></div>
+<div style="position:absolute;left:72.02px;top:307.01px" class="cls_002"><span class="cls_002">We have just created a UI so far. So obviously, our application won’t be functional.</span></div>
+<div style="position:absolute;left:72.02px;top:334.49px" class="cls_002"><span class="cls_002">Now let’s take a look at the </span><span class="cls_023">MainWindow.xaml.cs </span><span class="cls_002">file that is the code-behind file for </span><span class="cls_023">MainWindow.xaml</span><span class="cls_002">.</span></div>
+<div style="position:absolute;left:72.02px;top:347.93px" class="cls_002"><span class="cls_002">The class code is listed in Listing 3 where first some lines are namespace references, followed by a</span></div>
+<div style="position:absolute;left:72.02px;top:361.37px" class="cls_002"><span class="cls_002">partial class named </span><span class="cls_016">MainWindow </span><span class="cls_002">who has a default constructor. After that, you will see the</span></div>
+<div style="position:absolute;left:72.02px;top:374.81px" class="cls_023"><span class="cls_023">AddItemClick </span><span class="cls_002">event handler is added for the Button click event.</span></div>
+<div style="position:absolute;left:72.02px;top:397.97px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System;</span></div>
+<div style="position:absolute;left:72.02px;top:408.89px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Collections.Generic;</span></div>
+<div style="position:absolute;left:72.02px;top:420.19px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Linq;</span></div>
+<div style="position:absolute;left:72.02px;top:431.35px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Text;</span></div>
+<div style="position:absolute;left:72.02px;top:442.27px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Threading.Tasks;</span></div>
+<div style="position:absolute;left:72.02px;top:453.31px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Windows;</span></div>
+<div style="position:absolute;left:72.02px;top:464.59px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Windows.Controls;</span></div>
+<div style="position:absolute;left:72.02px;top:475.75px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Windows.Data;</span></div>
+<div style="position:absolute;left:72.02px;top:486.79px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Windows.Documents;</span></div>
+<div style="position:absolute;left:72.02px;top:497.95px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Windows.Input;</span></div>
+<div style="position:absolute;left:72.02px;top:509.11px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Windows.Media;</span></div>
+<div style="position:absolute;left:72.02px;top:520.15px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Windows.Media.Imaging;</span></div>
+<div style="position:absolute;left:72.02px;top:531.31px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Windows.Navigation;</span></div>
+<div style="position:absolute;left:72.02px;top:542.47px" class="cls_037"><span class="cls_037">using </span><span class="cls_038">System.Windows.Shapes;</span></div>
+<div style="position:absolute;left:72.02px;top:564.55px" class="cls_037"><span class="cls_037">namespace </span><span class="cls_038">HelloWPFSample</span></div>
+<div style="position:absolute;left:72.02px;top:575.83px" class="cls_038"><span class="cls_038">{</span></div>
+<div style="position:absolute;left:93.02px;top:586.90px" class="cls_040"><span class="cls_040">/// &lt;summary></span></div>
+<div style="position:absolute;left:96.02px;top:598.18px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">Interaction logic for MainWindow.xaml</span></div>
+<div style="position:absolute;left:96.02px;top:609.58px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">partial instance of a MainWindow class</span></div>
+<div style="position:absolute;left:96.02px;top:620.86px" class="cls_040"><span class="cls_040">/// &lt;/summary></span></div>
+<div style="position:absolute;left:96.02px;top:632.14px" class="cls_028"><span class="cls_028">public partial class </span><span class="cls_042">MainWindow </span><span class="cls_031">: Window</span></div>
+<div style="position:absolute;left:96.02px;top:643.54px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:120.14px;top:654.94px" class="cls_040"><span class="cls_040">/// &lt;summary></span></div>
+<div style="position:absolute;left:120.14px;top:666.22px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">Constructor of a MainWindow</span></div>
+<div style="position:absolute;left:120.14px;top:677.02px" class="cls_040"><span class="cls_040">/// &lt;/summary></span></div>
+<div style="position:absolute;left:120.14px;top:688.30px" class="cls_028"><span class="cls_028">public </span><span class="cls_042">MainWindow</span><span class="cls_031">()</span></div>
+<div style="position:absolute;left:120.14px;top:700.30px" class="cls_031"><span class="cls_031">{</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:10426px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background14.jpg" width=612 height=792></div>
+<div style="position:absolute;left:144.14px;top:94.70px" class="cls_031"><span class="cls_031">InitializeComponent();</span></div>
+<div style="position:absolute;left:120.14px;top:105.98px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:120.14px;top:116.54px" class="cls_040"><span class="cls_040">/// &lt;summary></span></div>
+<div style="position:absolute;left:120.14px;top:128.66px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">Event-handler for Button click's event</span></div>
+<div style="position:absolute;left:120.14px;top:140.06px" class="cls_040"><span class="cls_040">/// &lt;/summary></span></div>
+<div style="position:absolute;left:120.14px;top:151.34px" class="cls_040"><span class="cls_040">/// &lt;param name="</span><span class="cls_031">sender</span><span class="cls_040">">&lt;/param></span></div>
+<div style="position:absolute;left:120.14px;top:162.86px" class="cls_040"><span class="cls_040">/// &lt;param name="</span><span class="cls_031">e</span><span class="cls_040">">&lt;/param></span></div>
+<div style="position:absolute;left:120.14px;top:174.02px" class="cls_028"><span class="cls_028">private void </span><span class="cls_031">AddItemClick(</span><span class="cls_028">object </span><span class="cls_031">sender, RoutedEventArgs e)</span></div>
+<div style="position:absolute;left:120.14px;top:185.30px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:120.14px;top:208.10px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:96.02px;top:219.26px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:72.02px;top:230.78px" class="cls_038"><span class="cls_038">}</span></div>
+<div style="position:absolute;left:287.81px;top:253.25px" class="cls_002"><span class="cls_002">Listing 3</span></div>
+<div style="position:absolute;left:72.02px;top:280.85px" class="cls_002"><span class="cls_002">Now, let’s add an event handler to the Button. This code adds a Textbox’s content to the ListBox control</span></div>
+<div style="position:absolute;left:72.02px;top:294.29px" class="cls_002"><span class="cls_002">when the button is clicked. We do this by adding a single line of code as you can see in Listing 4 where</span></div>
+<div style="position:absolute;left:72.02px;top:307.61px" class="cls_002"><span class="cls_002">we simply call ListBox.Items.Add method and pass TextBox.Text as a parameter.</span></div>
+<div style="position:absolute;left:72.02px;top:330.65px" class="cls_037"><span class="cls_037">private void </span><span class="cls_038">AddItemClick(</span><span class="cls_037">object </span><span class="cls_038">sender, </span><span class="cls_045">RoutedEventArgs </span><span class="cls_038">e)</span></div>
+<div style="position:absolute;left:72.02px;top:341.93px" class="cls_038"><span class="cls_038">{</span></div>
+<div style="position:absolute;left:93.02px;top:353.21px" class="cls_038"><span class="cls_038">listBox1.Items.Add(textBox1.Text);</span></div>
+<div style="position:absolute;left:72.02px;top:364.13px" class="cls_038"><span class="cls_038">}</span></div>
+<div style="position:absolute;left:287.81px;top:375.53px" class="cls_002"><span class="cls_002">Listing 4</span></div>
+<div style="position:absolute;left:72.02px;top:399.17px" class="cls_014"><span class="cls_014">Build and Run</span></div>
+<div style="position:absolute;left:72.02px;top:428.83px" class="cls_002"><span class="cls_002">Now let’s build and run our application by pressing F5.</span></div>
+<div style="position:absolute;left:72.02px;top:452.11px" class="cls_002"><span class="cls_002">If you type any text in the TextBox and click the </span><span class="cls_016">Add Item </span><span class="cls_002">button, you will see that entered text will be</span></div>
+<div style="position:absolute;left:72.02px;top:465.55px" class="cls_002"><span class="cls_002">added to the </span><span class="cls_016">ListBox </span><span class="cls_002">and output will look like Figure 13.</span></div>
+<div style="position:absolute;left:285.53px;top:686.74px" class="cls_002"><span class="cls_002">Figure 13</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:11228px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background15.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:95.30px" class="cls_014"><span class="cls_014">2. Designing User Interfaces at Run-time</span></div>
+<div style="position:absolute;left:72.02px;top:124.70px" class="cls_002"><span class="cls_002">As we said earlier in this chapter, we have two choices to design our user interfaces. Using XAML at</span></div>
+<div style="position:absolute;left:72.02px;top:138.02px" class="cls_002"><span class="cls_002">design-time and using C# classes at run-time. In most of the cases, you will end up mixing both of them.</span></div>
+<div style="position:absolute;left:72.02px;top:151.46px" class="cls_002"><span class="cls_002">You will end up in designing some interfaces at design-time that would not change no matter what and</span></div>
+<div style="position:absolute;left:72.02px;top:164.90px" class="cls_002"><span class="cls_002">you would create user interfaces at run-time that will change dynamically.</span></div>
+<div style="position:absolute;left:72.02px;top:188.42px" class="cls_002"><span class="cls_002">Now let’s create the same UI using WPF code-behind.</span></div>
+<div style="position:absolute;left:72.02px;top:215.90px" class="cls_002"><span class="cls_002">First, let’s comment out our X  ML code that creates TextBox, Button, and ListBox controls. The</span></div>
+<div style="position:absolute;left:72.02px;top:229.34px" class="cls_002"><span class="cls_002">commented XAML looks like Listing 5. Also, note that we have added the Name attribute of </span><span class="cls_016">Grid </span><span class="cls_002">to</span></div>
+<div style="position:absolute;left:72.02px;top:242.81px" class="cls_016"><span class="cls_016">RootLayout</span><span class="cls_002">. This is very important. Because we are going to use this name to add children to the Grid.</span></div>
+<div style="position:absolute;left:72.02px;top:256.25px" class="cls_002"><span class="cls_002">The code-behind class accesses XAML elements by their name. This confusion will be clear once we</span></div>
+<div style="position:absolute;left:72.02px;top:269.69px" class="cls_002"><span class="cls_002">understand the code in listing 6.</span></div>
+<div style="position:absolute;left:72.02px;top:296.57px" class="cls_037"><span class="cls_037">&lt;</span><span class="cls_046">Window </span><span class="cls_047">x</span><span class="cls_037">:</span><span class="cls_047">Class</span><span class="cls_037">="HelloWPFSample.MainWindow"</span></div>
+<div style="position:absolute;left:114.14px;top:307.73px" class="cls_047"><span class="cls_047">xmlns</span><A HREF="http://schemas.microsoft.com/winfx/2006/xaml/presentation">="http://schemas.microsoft.c</A><span class="cls_037">o<A HREF="http://schemas.microsoft.com/winfx/2006/xaml/presentation">m/winfx/2006/xaml/</A>presentation"</span></div>
+<div style="position:absolute;left:114.14px;top:318.89px" class="cls_047"><span class="cls_047">xmlns</span><span class="cls_037">:</span><span class="cls_047">x</span><A HREF="http://schemas.microsoft.com/winfx/2006/xaml">="http://schemas.microsoft.com/winfx/2006/xaml</A>"</span></div>
+<div style="position:absolute;left:114.14px;top:329.09px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">mc</span><A HREF="http://schemas.openxmlformats.org/markup-compatibility/2006">="http://schemas.openxmlformats.org/markup</A><span class="cls_028">-<A HREF="http://schemas.openxmlformats.org/markup-compatibility/2006">compatibility/2006"</A> </span></div>
+<div style="position:absolute;left:114.14px;top:340.37px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">local</span><span class="cls_028">="clr-namespace:HelloWPFSample"</span></div>
+<div style="position:absolute;left:114.14px;top:352.73px" class="cls_030"><span class="cls_030">mc</span><span class="cls_028">:</span><span class="cls_030">Ignorable</span><span class="cls_028">="d"</span></div>
+<div style="position:absolute;left:114.14px;top:364.37px" class="cls_047"><span class="cls_047">Title</span><span class="cls_037">="MainWindow" </span><span class="cls_047">Height</span><span class="cls_037">="300" </span><span class="cls_047">Width</span><span class="cls_037">="500"></span></div>
+<div style="position:absolute;left:102.14px;top:374.45px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid </span><span class="cls_030">x</span><span class="cls_028">:</span><span class="cls_030">Name</span><span class="cls_028">="OuterGrid"></span></div>
+<div style="position:absolute;left:120.14px;top:386.57px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid.RowDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:144.14px;top:397.85px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">RowDefinition </span><span class="cls_030">Height</span><span class="cls_028">="Auto"/></span></div>
+<div style="position:absolute;left:144.14px;top:409.15px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">RowDefinition </span><span class="cls_030">Height</span><span class="cls_028">="Auto"/></span></div>
+<div style="position:absolute;left:120.14px;top:420.67px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid.RowDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:120.14px;top:431.83px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid.ColumnDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:144.14px;top:443.11px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">ColumnDefinition</span><span class="cls_028">/></span></div>
+<div style="position:absolute;left:144.14px;top:454.63px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">ColumnDefinition</span><span class="cls_028">/></span></div>
+<div style="position:absolute;left:120.14px;top:465.91px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid.ColumnDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:120.02px;top:476.47px" class="cls_041"><span class="cls_041">&lt;!--&lt;TextBox Name="textBox1"</span></div>
+<div style="position:absolute;left:174.14px;top:487.75px" class="cls_041"><span class="cls_041">Height="30"</span></div>
+<div style="position:absolute;left:174.14px;top:499.15px" class="cls_041"><span class="cls_041">HorizontalAlignment="Left"</span></div>
+<div style="position:absolute;left:174.14px;top:510.43px" class="cls_041"><span class="cls_041">Margin="5 10 0 0"</span></div>
+<div style="position:absolute;left:174.14px;top:521.71px" class="cls_041"><span class="cls_041">Width="207" /></span></div>
+<div style="position:absolute;left:126.14px;top:533.95px" class="cls_041"><span class="cls_041">&lt;Button Name="button1"</span></div>
+<div style="position:absolute;left:168.14px;top:544.51px" class="cls_041"><span class="cls_041">Content="Button"</span></div>
+<div style="position:absolute;left:168.14px;top:555.79px" class="cls_041"><span class="cls_041">Height="30"</span></div>
+<div style="position:absolute;left:168.14px;top:567.19px" class="cls_041"><span class="cls_041">HorizontalAlignment="Left"</span></div>
+<div style="position:absolute;left:168.14px;top:578.50px" class="cls_041"><span class="cls_041">Margin="0 10 0 0"</span></div>
+<div style="position:absolute;left:168.14px;top:589.78px" class="cls_041"><span class="cls_041">Width="115"</span></div>
+<div style="position:absolute;left:168.14px;top:601.18px" class="cls_041"><span class="cls_041">Grid.Column="1"/></span></div>
+<div style="position:absolute;left:120.14px;top:613.30px" class="cls_041"><span class="cls_041">&lt;ListBox Name="listBox1"</span></div>
+<div style="position:absolute;left:174.14px;top:623.86px" class="cls_041"><span class="cls_041">Height="102"</span></div>
+<div style="position:absolute;left:174.14px;top:635.14px" class="cls_041"><span class="cls_041">HorizontalAlignment="Left"</span></div>
+<div style="position:absolute;left:174.14px;top:646.54px" class="cls_041"><span class="cls_041">Margin="5 10 0 0"</span></div>
+<div style="position:absolute;left:174.14px;top:657.82px" class="cls_041"><span class="cls_041">Width="360"</span></div>
+<div style="position:absolute;left:174.14px;top:669.10px" class="cls_041"><span class="cls_041">Grid.ColumnSpan="2"</span></div>
+<div style="position:absolute;left:174.14px;top:680.50px" class="cls_041"><span class="cls_041">Grid.Row="1"/>--></span></div>
+<div style="position:absolute;left:96.02px;top:692.50px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:77.30px;top:704.02px" class="cls_037"><span class="cls_037">&lt;/</span><span class="cls_046">Window</span><span class="cls_037">></span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:12030px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background16.jpg" width=612 height=792></div>
+<div style="position:absolute;left:287.69px;top:94.82px" class="cls_002"><span class="cls_002">Listing 5</span></div>
+<div style="position:absolute;left:72.02px;top:108.38px" class="cls_002"><span class="cls_002">Basically, we will create a TextBox, Button, and ListBox at run-time and then we need to add these</span></div>
+<div style="position:absolute;left:72.02px;top:121.82px" class="cls_002"><span class="cls_002">controls to the Grid as children.</span></div>
+<div style="position:absolute;left:72.02px;top:145.34px" class="cls_002"><span class="cls_002">First of all, let’s add three variables each for TextBox, Button, and ListBox.   fter that, create a method</span></div>
+<div style="position:absolute;left:72.02px;top:158.78px" class="cls_002"><span class="cls_002">and name it CreateDynamicUI which is responsible for initializing TextBox, Button, and ListBox controls</span></div>
+<div style="position:absolute;left:72.02px;top:172.22px" class="cls_002"><span class="cls_002">and setting their properties. As you can see from the code in Listing 6, we can also add event handlers</span></div>
+<div style="position:absolute;left:72.02px;top:185.66px" class="cls_002"><span class="cls_002">on </span><span class="cls_016">button1.Click event </span><span class="cls_002">in the code itself by using a RoutedEventHandler and passing a method as a</span></div>
+<div style="position:absolute;left:72.02px;top:199.10px" class="cls_002"><span class="cls_002">parameter.</span></div>
+<div style="position:absolute;left:96.02px;top:221.30px" class="cls_040"><span class="cls_040">/// &lt;summary></span></div>
+<div style="position:absolute;left:96.02px;top:233.54px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">Interaction logic for MainWindow.xaml</span></div>
+<div style="position:absolute;left:96.02px;top:244.85px" class="cls_040"><span class="cls_040">/// &lt;/summary></span></div>
+<div style="position:absolute;left:96.02px;top:256.13px" class="cls_028"><span class="cls_028">public partial class </span><span class="cls_042">MainWindow </span><span class="cls_031">: Window</span></div>
+<div style="position:absolute;left:96.02px;top:266.93px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:120.14px;top:289.37px" class="cls_040"><span class="cls_040">#region </span><span class="cls_031">Constructor</span></div>
+<div style="position:absolute;left:144.14px;top:301.49px" class="cls_040"><span class="cls_040">/// &lt;summary></span></div>
+<div style="position:absolute;left:144.14px;top:312.89px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">Constructor of a MainWindow</span></div>
+<div style="position:absolute;left:144.14px;top:323.45px" class="cls_040"><span class="cls_040">/// &lt;/summary></span></div>
+<div style="position:absolute;left:144.14px;top:334.97px" class="cls_028"><span class="cls_028">public </span><span class="cls_042">MainWindow</span><span class="cls_031">()</span></div>
+<div style="position:absolute;left:144.14px;top:346.85px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:168.14px;top:358.01px" class="cls_031"><span class="cls_031">InitializeComponent();</span></div>
+<div style="position:absolute;left:144.14px;top:369.29px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:120.14px;top:380.09px" class="cls_040"><span class="cls_040">#endregion</span></div>
+<div style="position:absolute;left:120.50px;top:414.79px" class="cls_040"><span class="cls_040">#region </span><span class="cls_031">UI Properties</span></div>
+<div style="position:absolute;left:144.38px;top:426.07px" class="cls_040"><span class="cls_040">/// &lt;summary></span></div>
+<div style="position:absolute;left:144.14px;top:437.35px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">The TextBox control</span></div>
+<div style="position:absolute;left:144.14px;top:448.87px" class="cls_040"><span class="cls_040">/// &lt;/summary></span></div>
+<div style="position:absolute;left:144.14px;top:460.15px" class="cls_028"><span class="cls_028">protected </span><span class="cls_031">TextBox textBox1;</span></div>
+<div style="position:absolute;left:144.14px;top:482.83px" class="cls_040"><span class="cls_040">/// &lt;summary></span></div>
+<div style="position:absolute;left:144.14px;top:494.11px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">The Button control</span></div>
+<div style="position:absolute;left:144.14px;top:505.39px" class="cls_040"><span class="cls_040">/// &lt;/summary></span></div>
+<div style="position:absolute;left:144.14px;top:516.19px" class="cls_028"><span class="cls_028">protected </span><span class="cls_031">Button button1;</span></div>
+<div style="position:absolute;left:144.14px;top:539.35px" class="cls_040"><span class="cls_040">/// &lt;summary></span></div>
+<div style="position:absolute;left:144.14px;top:550.63px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">The ListBox Control</span></div>
+<div style="position:absolute;left:144.14px;top:562.15px" class="cls_040"><span class="cls_040">/// &lt;/summary></span></div>
+<div style="position:absolute;left:144.14px;top:572.71px" class="cls_028"><span class="cls_028">protected </span><span class="cls_031">ListBox listBox1;</span></div>
+<div style="position:absolute;left:120.14px;top:584.02px" class="cls_040"><span class="cls_040">#endregion</span></div>
+<div style="position:absolute;left:120.14px;top:617.98px" class="cls_040"><span class="cls_040">#region </span><span class="cls_031">Methods</span></div>
+<div style="position:absolute;left:144.14px;top:630.22px" class="cls_040"><span class="cls_040">/// &lt;summary></span></div>
+<div style="position:absolute;left:144.14px;top:641.50px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">This method creates UI controls and set their properties</span></div>
+<div style="position:absolute;left:144.14px;top:652.78px" class="cls_040"><span class="cls_040">/// &lt;/summary></span></div>
+<div style="position:absolute;left:144.14px;top:664.18px" class="cls_028"><span class="cls_028">private void </span><span class="cls_031">CreateDynamicUI()</span></div>
+<div style="position:absolute;left:144.14px;top:675.46px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:168.14px;top:686.02px" class="cls_041"><span class="cls_041">// Create a TextBox</span></div>
+<div style="position:absolute;left:168.14px;top:697.54px" class="cls_031"><span class="cls_031">textBox1 = </span><span class="cls_028">new </span><span class="cls_031">TextBox();</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:12832px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background17.jpg" width=612 height=792></div>
+<div style="position:absolute;left:168.14px;top:93.98px" class="cls_031"><span class="cls_031">textBox1.Name = </span><span class="cls_029">"textBox1"</span><span class="cls_031">;</span></div>
+<div style="position:absolute;left:168.14px;top:105.26px" class="cls_031"><span class="cls_031">textBox1.Width = 207;</span></div>
+<div style="position:absolute;left:168.14px;top:117.38px" class="cls_031"><span class="cls_031">textBox1.Height = 28;</span></div>
+<div style="position:absolute;left:168.14px;top:128.06px" class="cls_031"><span class="cls_031">textBox1.Margin = </span><span class="cls_028">new </span><span class="cls_031">Thickness(13, 17, 0, 0);</span></div>
+<div style="position:absolute;left:168.14px;top:139.34px" class="cls_031"><span class="cls_031">textBox1.HorizontalAlignment =</span></div>
+<div style="position:absolute;left:72.02px;top:151.22px" class="cls_031"><span class="cls_031">System.Windows.HorizontalAlignment.Left;</span></div>
+<div style="position:absolute;left:168.14px;top:162.02px" class="cls_031"><span class="cls_031">textBox1.VerticalAlignment =</span></div>
+<div style="position:absolute;left:72.02px;top:173.30px" class="cls_031"><span class="cls_031">System.Windows.VerticalAlignment.Top;</span></div>
+<div style="position:absolute;left:168.14px;top:184.70px" class="cls_041"><span class="cls_041">// Add to Grid</span></div>
+<div style="position:absolute;left:168.14px;top:196.22px" class="cls_031"><span class="cls_031">RootLayout.Children.Add(textBox1);</span></div>
+<div style="position:absolute;left:168.14px;top:218.42px" class="cls_041"><span class="cls_041">// Create a Button</span></div>
+<div style="position:absolute;left:168.14px;top:229.82px" class="cls_031"><span class="cls_031">button1 = </span><span class="cls_028">new </span><span class="cls_031">Button();</span></div>
+<div style="position:absolute;left:168.14px;top:241.25px" class="cls_031"><span class="cls_031">button1.Name = </span><span class="cls_029">"textBox1"</span><span class="cls_031">;</span></div>
+<div style="position:absolute;left:168.14px;top:252.53px" class="cls_031"><span class="cls_031">button1.Content = </span><span class="cls_029">"Add Item"</span><span class="cls_031">;</span></div>
+<div style="position:absolute;left:168.14px;top:263.93px" class="cls_031"><span class="cls_031">button1.Width = 107;</span></div>
+<div style="position:absolute;left:168.14px;top:275.93px" class="cls_031"><span class="cls_031">button1.Height = 30;</span></div>
+<div style="position:absolute;left:168.14px;top:286.49px" class="cls_031"><span class="cls_031">button1.Margin = </span><span class="cls_028">new </span><span class="cls_031">Thickness(235, 15, 0, 0);</span></div>
+<div style="position:absolute;left:168.14px;top:297.89px" class="cls_031"><span class="cls_031">button1.HorizontalAlignment =</span></div>
+<div style="position:absolute;left:72.02px;top:310.01px" class="cls_031"><span class="cls_031">System.Windows.HorizontalAlignment.Left;</span></div>
+<div style="position:absolute;left:168.14px;top:320.57px" class="cls_031"><span class="cls_031">button1.VerticalAlignment =</span></div>
+<div style="position:absolute;left:72.02px;top:331.85px" class="cls_031"><span class="cls_031">System.Windows.VerticalAlignment.Top;</span></div>
+<div style="position:absolute;left:168.14px;top:343.97px" class="cls_031"><span class="cls_031">button1.Click += </span><span class="cls_028">new </span><span class="cls_031">RoutedEventHandler(AddItemClick);</span></div>
+<div style="position:absolute;left:168.14px;top:354.53px" class="cls_041"><span class="cls_041">// Add to Grid</span></div>
+<div style="position:absolute;left:168.14px;top:365.93px" class="cls_031"><span class="cls_031">RootLayout.Children.Add(button1);</span></div>
+<div style="position:absolute;left:168.14px;top:388.61px" class="cls_041"><span class="cls_041">// Create a ListBox</span></div>
+<div style="position:absolute;left:168.14px;top:399.89px" class="cls_031"><span class="cls_031">listBox1 = </span><span class="cls_028">new </span><span class="cls_031">ListBox();</span></div>
+<div style="position:absolute;left:168.14px;top:411.19px" class="cls_031"><span class="cls_031">listBox1.Name = </span><span class="cls_029">"listBox1"</span><span class="cls_031">;</span></div>
+<div style="position:absolute;left:168.14px;top:422.59px" class="cls_031"><span class="cls_031">listBox1.Width = 327;</span></div>
+<div style="position:absolute;left:168.14px;top:434.59px" class="cls_031"><span class="cls_031">listBox1.Height = 102;</span></div>
+<div style="position:absolute;left:168.14px;top:445.15px" class="cls_031"><span class="cls_031">listBox1.Margin = </span><span class="cls_028">new </span><span class="cls_031">Thickness(15, 57, 0, 0);</span></div>
+<div style="position:absolute;left:168.14px;top:456.67px" class="cls_031"><span class="cls_031">listBox1.HorizontalAlignment =</span></div>
+<div style="position:absolute;left:72.02px;top:468.67px" class="cls_031"><span class="cls_031">System.Windows.HorizontalAlignment.Left;</span></div>
+<div style="position:absolute;left:168.14px;top:479.11px" class="cls_031"><span class="cls_031">listBox1.VerticalAlignment =</span></div>
+<div style="position:absolute;left:72.02px;top:490.63px" class="cls_031"><span class="cls_031">System.Windows.VerticalAlignment.Top;</span></div>
+<div style="position:absolute;left:168.14px;top:512.71px" class="cls_041"><span class="cls_041">// Add children to the Grid</span></div>
+<div style="position:absolute;left:168.14px;top:524.23px" class="cls_031"><span class="cls_031">RootLayout.Children.Add(listBox1);</span></div>
+<div style="position:absolute;left:144.14px;top:536.35px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:120.14px;top:547.63px" class="cls_040"><span class="cls_040">#endregion</span></div>
+<div style="position:absolute;left:120.14px;top:570.43px" class="cls_040"><span class="cls_040">#region </span><span class="cls_031">Event-Handlers</span></div>
+<div style="position:absolute;left:144.14px;top:581.62px" class="cls_040"><span class="cls_040">/// &lt;summary></span></div>
+<div style="position:absolute;left:144.14px;top:592.90px" class="cls_040"><span class="cls_040">/// </span><span class="cls_041">Event-handlder for add button's click event.</span></div>
+<div style="position:absolute;left:144.14px;top:604.42px" class="cls_040"><span class="cls_040">/// &lt;/summary></span></div>
+<div style="position:absolute;left:144.14px;top:615.70px" class="cls_040"><span class="cls_040">/// &lt;param name="</span><span class="cls_031">sender</span><span class="cls_040">">&lt;/param></span></div>
+<div style="position:absolute;left:144.14px;top:626.98px" class="cls_040"><span class="cls_040">/// &lt;param name="</span><span class="cls_031">e</span><span class="cls_040">">&lt;/param></span></div>
+<div style="position:absolute;left:144.14px;top:638.50px" class="cls_028"><span class="cls_028">private void </span><span class="cls_031">AddItemClick(</span><span class="cls_028">object </span><span class="cls_031">sender, RoutedEventArgs e)</span></div>
+<div style="position:absolute;left:144.14px;top:649.78px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:168.14px;top:660.22px" class="cls_031"><span class="cls_031">listBox1.Items.Add(textBox1.Text);</span></div>
+<div style="position:absolute;left:144.14px;top:672.46px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:120.14px;top:683.74px" class="cls_040"><span class="cls_040">#endregion</span></div>
+<div style="position:absolute;left:96.02px;top:695.02px" class="cls_031"><span class="cls_031">}</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:13634px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background18.jpg" width=612 height=792></div>
+<div style="position:absolute;left:287.69px;top:94.82px" class="cls_002"><span class="cls_002">Listing 6</span></div>
+<div style="position:absolute;left:72.02px;top:108.38px" class="cls_002"><span class="cls_002">Now, let’s call the CreateDynamicUI method on MainWindow’s constructor as you can see in Listing 7.</span></div>
+<div style="position:absolute;left:72.02px;top:121.82px" class="cls_002"><span class="cls_002">The output will be the same as Figure 11.</span></div>
+<div style="position:absolute;left:72.02px;top:144.98px" class="cls_028"><span class="cls_028">public </span><span class="cls_031">MainWindow()</span></div>
+<div style="position:absolute;left:72.02px;top:156.26px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:96.02px;top:166.70px" class="cls_031"><span class="cls_031">InitializeComponent();</span></div>
+<div style="position:absolute;left:96.02px;top:178.22px" class="cls_031"><span class="cls_031">CreateDynamicUI();</span></div>
+<div style="position:absolute;left:72.02px;top:190.34px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:287.81px;top:201.86px" class="cls_002"><span class="cls_002">Listing 7</span></div>
+<div style="position:absolute;left:72.02px;top:226.82px" class="cls_010"><span class="cls_010">WPF Application Types</span></div>
+<div style="position:absolute;left:72.02px;top:255.41px" class="cls_002"><span class="cls_002">WPF allows you to create the following four types of applications.</span></div>
+<div style="position:absolute;left:108.14px;top:280.97px" class="cls_002"><span class="cls_002">1.   WPF App</span></div>
+<div style="position:absolute;left:108.14px;top:296.45px" class="cls_002"><span class="cls_002">2.   WPF Browser App</span></div>
+<div style="position:absolute;left:108.14px;top:311.93px" class="cls_002"><span class="cls_002">3.   WPF User Control Library</span></div>
+<div style="position:absolute;left:108.14px;top:327.17px" class="cls_002"><span class="cls_002">4.   WPF Custom Control Library</span></div>
+<div style="position:absolute;left:72.02px;top:352.73px" class="cls_002"><span class="cls_002">The WPF app template allows you to create a windows standalone application. A WPF Browser App</span></div>
+<div style="position:absolute;left:72.02px;top:368.09px" class="cls_002"><span class="cls_002">template allows you to create a windows app with browser supports including browser navigation and</span></div>
+<div style="position:absolute;left:72.02px;top:383.57px" class="cls_002"><span class="cls_002">uses a browser to show the contents. WPF User Control Library is used to create reusable WPF controls</span></div>
+<div style="position:absolute;left:72.02px;top:399.05px" class="cls_002"><span class="cls_002">and WPF Custom Control Library is used to create third party WPF.</span></div>
+<div style="position:absolute;left:72.02px;top:424.39px" class="cls_054"><span class="cls_054">WPF App</span></div>
+<div style="position:absolute;left:72.02px;top:457.03px" class="cls_002"><span class="cls_002">Up above we have seen how to create a complete WPF App. When we created the </span><span class="cls_016">HelloWPFSample</span></div>
+<div style="position:absolute;left:72.02px;top:472.51px" class="cls_002"><span class="cls_002">app in our previous section. A WPF standalone app is a traditional desktop application. The application</span></div>
+<div style="position:absolute;left:72.02px;top:487.87px" class="cls_002"><span class="cls_002">type is an executable assembly (.exe) that runs on a Windows OS. A user interface in this kind of</span></div>
+<div style="position:absolute;left:72.02px;top:503.35px" class="cls_002"><span class="cls_002">application is usually a window.</span></div>
+<div style="position:absolute;left:72.02px;top:528.55px" class="cls_054"><span class="cls_054">WPF Browser App</span></div>
+<div style="position:absolute;left:72.02px;top:561.19px" class="cls_002"><span class="cls_002">A WPF Browser App also known as XBAP application is a traditional desktop application with navigation</span></div>
+<div style="position:absolute;left:72.02px;top:574.75px" class="cls_002"><span class="cls_002">support by using a browser like navigation buttons. You may build this kind of application to provide</span></div>
+<div style="position:absolute;left:72.02px;top:588.22px" class="cls_002"><span class="cls_002">back and forward navigation support that will allow users to move back and forth within while</span></div>
+<div style="position:absolute;left:72.02px;top:601.54px" class="cls_002"><span class="cls_002">navigating through user interfaces. A user interface in this kind of application is usually a page.</span></div>
+<div style="position:absolute;left:72.02px;top:625.06px" class="cls_002"><span class="cls_002">Don’t let the Browser name in this application type confuses you. This application type still is an</span></div>
+<div style="position:absolute;left:72.02px;top:638.50px" class="cls_002"><span class="cls_002">executable assembly(.exe) that runs on a local machine. The only difference is how the user interfaces</span></div>
+<div style="position:absolute;left:72.02px;top:651.94px" class="cls_002"><span class="cls_002">look and how the application keeps track of the history of navigation.</span></div>
+<div style="position:absolute;left:72.02px;top:675.34px" class="cls_002"><span class="cls_002">Let’s build a WPF Browser App. Create a </span><span class="cls_016">New Project </span><span class="cls_002">in Visual Studio 2019 and select </span><span class="cls_016">WPF Browser App</span></div>
+<div style="position:absolute;left:72.02px;top:688.90px" class="cls_002"><span class="cls_002">in the project templates, as per Figure 14.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:14436px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background19.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:94.94px" class="cls_023"><span class="cls_023">Note: We are developing this app in .NET Framework because .NET doesn’t support WPF Browser App at</span></div>
+<div style="position:absolute;left:72.02px;top:108.38px" class="cls_023"><span class="cls_023">the time we are writing this book.</span></div>
+<div style="position:absolute;left:285.41px;top:389.57px" class="cls_002"><span class="cls_002">Figure 14</span></div>
+<div style="position:absolute;left:72.02px;top:403.01px" class="cls_002"><span class="cls_002">When you build a project. First thing you will notice is that there are no MainWindow.xaml. Instead, you</span></div>
+<div style="position:absolute;left:72.02px;top:416.47px" class="cls_002"><span class="cls_002">will see Page1.xaml has been added to the project.</span></div>
+<div style="position:absolute;left:72.02px;top:438.91px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Page </span><span class="cls_030">x</span><span class="cls_028">:</span><span class="cls_030">Class</span><span class="cls_028">="WpfBrowserApp1.Page1"</span></div>
+<div style="position:absolute;left:108.14px;top:450.19px" class="cls_030"><span class="cls_030">xmlns</span><A HREF="http://schemas.microsoft.com/winfx/2006/xaml/presentation">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</A> </span></div>
+<div style="position:absolute;left:108.14px;top:461.59px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">x</span><A HREF="http://schemas.microsoft.com/winfx/2006/xaml">="http://schemas.microsoft.com/winfx/2006/xaml"</A> </span></div>
+<div style="position:absolute;left:108.14px;top:472.87px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">mc</span><A HREF="http://schemas.openxmlformats.org/markup-compatibility/2006">="http://schemas.openxmlformats.org/markup</A><span class="cls_028">-<A HREF="http://schemas.openxmlformats.org/markup-compatibility/2006">compatibility/2006"</A> </span></div>
+<div style="position:absolute;left:108.14px;top:484.15px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">d</span><A HREF="http://schemas.microsoft.com/expression/blend/2008">="http://schemas.microsoft.com/expression/blend/2008"</A> </span></div>
+<div style="position:absolute;left:108.14px;top:495.55px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">local</span><span class="cls_028">="clr-namespace:WpfBrowserApp1"</span></div>
+<div style="position:absolute;left:108.14px;top:507.67px" class="cls_030"><span class="cls_030">mc</span><span class="cls_028">:</span><span class="cls_030">Ignorable</span><span class="cls_028">="d"</span></div>
+<div style="position:absolute;left:108.14px;top:518.23px" class="cls_030"><span class="cls_030">d</span><span class="cls_028">:</span><span class="cls_030">DesignHeight</span><span class="cls_028">="450" </span><span class="cls_030">d</span><span class="cls_028">:</span><span class="cls_030">DesignWidth</span><span class="cls_028">="800"</span></div>
+<div style="position:absolute;left:108.14px;top:529.51px" class="cls_030"><span class="cls_030">Title</span><span class="cls_028">="Page1"></span></div>
+<div style="position:absolute;left:96.02px;top:541.03px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:96.02px;top:563.47px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:72.02px;top:574.99px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Page</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:287.81px;top:587.38px" class="cls_002"><span class="cls_002">Listing 8</span></div>
+<div style="position:absolute;left:72.02px;top:610.66px" class="cls_002"><span class="cls_002">As you can see in Listing 8, unlike Window.XAML, the Page.XAML does not have Width and Height</span></div>
+<div style="position:absolute;left:72.02px;top:624.10px" class="cls_002"><span class="cls_002">properties. However, there is DesignHeight and DesignWidth of the page. These 2 properties use to</span></div>
+<div style="position:absolute;left:72.02px;top:637.54px" class="cls_002"><span class="cls_002">maintain this width and height during the design time. When you run the application, it will be a full</span></div>
+<div style="position:absolute;left:72.02px;top:650.98px" class="cls_002"><span class="cls_002">Browser window anyway.</span></div>
+<div style="position:absolute;left:108.14px;top:673.30px" class="cls_030"><span class="cls_030">mc</span><span class="cls_028">:</span><span class="cls_030">Ignorable</span><span class="cls_028">="d" </span><span class="cls_030">d</span><span class="cls_028">:</span><span class="cls_030">DesignHeight</span><span class="cls_028">="300" </span><span class="cls_030">d</span><span class="cls_028">:</span><span class="cls_030">DesignWidth</span><span class="cls_028">="300"</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:15238px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background20.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:94.82px" class="cls_002"><span class="cls_002">Now, let’s add a few controls to this application. We have added a Button, a TextBox, and a ListBox</span></div>
+<div style="position:absolute;left:72.02px;top:108.38px" class="cls_002"><span class="cls_002">control by dragging and dropping them from the toolbox to the page. After adjusting their locations and</span></div>
+<div style="position:absolute;left:72.02px;top:121.70px" class="cls_002"><span class="cls_002">layout, my page UI looks like Figure 15.</span></div>
+<div style="position:absolute;left:285.53px;top:382.73px" class="cls_002"><span class="cls_002">Figure 15</span></div>
+<div style="position:absolute;left:72.02px;top:409.99px" class="cls_002"><span class="cls_002">By default, the XAML designer does not specify the name for controls. As we learnt the importance of</span></div>
+<div style="position:absolute;left:72.02px;top:423.55px" class="cls_002"><span class="cls_002">naming in previous topics i.e. to access UI control’s references in code behind, we must set their Name</span></div>
+<div style="position:absolute;left:72.02px;top:437.11px" class="cls_002"><span class="cls_002">property. Let’s set a Name property of Button, TextBox and ListBox controls to Button1, TextBox1, and</span></div>
+<div style="position:absolute;left:72.02px;top:450.67px" class="cls_002"><span class="cls_002">ListBox1 respectively.</span></div>
+<div style="position:absolute;left:72.02px;top:473.71px" class="cls_002"><span class="cls_002">And also change the Content property of </span><span class="cls_016">Button </span><span class="cls_002">to </span><span class="cls_016">Add Item.</span></div>
+<div style="position:absolute;left:72.02px;top:497.23px" class="cls_002"><span class="cls_002">The final XAML code would look like Listing 9.</span></div>
+<div style="position:absolute;left:97.34px;top:520.27px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid </span><span class="cls_030">x</span><span class="cls_028">:</span><span class="cls_030">Name</span><span class="cls_028">="OuterGrid"></span></div>
+<div style="position:absolute;left:120.26px;top:531.55px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid.RowDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:144.14px;top:542.83px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">RowDefinition </span><span class="cls_030">Height</span><span class="cls_028">="Auto"/></span></div>
+<div style="position:absolute;left:144.14px;top:554.35px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">RowDefinition </span><span class="cls_030">Height</span><span class="cls_028">="Auto"/></span></div>
+<div style="position:absolute;left:120.14px;top:565.63px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid.RowDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:120.14px;top:576.94px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid.ColumnDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:144.14px;top:588.46px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">ColumnDefinition</span><span class="cls_028">/></span></div>
+<div style="position:absolute;left:144.14px;top:599.62px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">ColumnDefinition</span><span class="cls_028">/></span></div>
+<div style="position:absolute;left:120.14px;top:610.90px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid.ColumnDefinitions</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:120.14px;top:622.42px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">TextBox </span><span class="cls_030">Name</span><span class="cls_028">="textBox1"</span></div>
+<div style="position:absolute;left:174.14px;top:632.98px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="30"</span></div>
+<div style="position:absolute;left:174.14px;top:644.26px" class="cls_030"><span class="cls_030">HorizontalAlignment</span><span class="cls_028">="Left"</span></div>
+<div style="position:absolute;left:174.14px;top:655.66px" class="cls_030"><span class="cls_030">Margin</span><span class="cls_028">="5 10 0 0"</span></div>
+<div style="position:absolute;left:174.14px;top:666.94px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="207" /></span></div>
+<div style="position:absolute;left:126.14px;top:679.06px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Button </span><span class="cls_030">Name</span><span class="cls_028">="button1"</span></div>
+<div style="position:absolute;left:168.14px;top:689.74px" class="cls_030"><span class="cls_030">Content</span><span class="cls_028">="Button"</span></div>
+<div style="position:absolute;left:168.14px;top:701.02px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="30"</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:16040px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background21.jpg" width=612 height=792></div>
+<div style="position:absolute;left:168.14px;top:93.98px" class="cls_030"><span class="cls_030">HorizontalAlignment</span><span class="cls_028">="Left"</span></div>
+<div style="position:absolute;left:168.14px;top:105.26px" class="cls_030"><span class="cls_030">Margin</span><span class="cls_028">="0 10 0 0"</span></div>
+<div style="position:absolute;left:168.14px;top:116.66px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="115"</span></div>
+<div style="position:absolute;left:168.14px;top:127.94px" class="cls_030"><span class="cls_030">Grid.Column</span><span class="cls_028">="1"/></span></div>
+<div style="position:absolute;left:120.14px;top:139.94px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">ListBox </span><span class="cls_030">Name</span><span class="cls_028">="listBox1"</span></div>
+<div style="position:absolute;left:174.14px;top:150.50px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="102"</span></div>
+<div style="position:absolute;left:174.14px;top:161.90px" class="cls_030"><span class="cls_030">HorizontalAlignment</span><span class="cls_028">="Left"</span></div>
+<div style="position:absolute;left:174.14px;top:173.18px" class="cls_030"><span class="cls_030">Margin</span><span class="cls_028">="5 10 0 0"</span></div>
+<div style="position:absolute;left:174.14px;top:184.58px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="360"</span></div>
+<div style="position:absolute;left:174.14px;top:195.86px" class="cls_030"><span class="cls_030">Grid.ColumnSpan</span><span class="cls_028">="2"</span></div>
+<div style="position:absolute;left:174.14px;top:207.14px" class="cls_030"><span class="cls_030">Grid.Row</span><span class="cls_028">="1"/></span></div>
+<div style="position:absolute;left:96.02px;top:218.54px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:287.81px;top:241.01px" class="cls_002"><span class="cls_002">Listing 9</span></div>
+<div style="position:absolute;left:72.02px;top:264.53px" class="cls_016"><span class="cls_016">Next, </span><span class="cls_002">double click on Button to add a click event handler for this button.</span></div>
+<div style="position:absolute;left:72.02px;top:287.93px" class="cls_002"><span class="cls_002">Now we need to add the logic to fill ListBox items. Write one line of code that is listed in Listing 10 on</span></div>
+<div style="position:absolute;left:72.02px;top:301.49px" class="cls_002"><span class="cls_002">the button click event handler. This code simply takes the TextBox.Text property and adds it to a ListBox</span></div>
+<div style="position:absolute;left:72.02px;top:314.93px" class="cls_002"><span class="cls_002">using ListBox.Items.Add method.</span></div>
+<div style="position:absolute;left:72.02px;top:337.85px" class="cls_028"><span class="cls_028">private void </span><span class="cls_031">Button1_Click(</span><span class="cls_028">object </span><span class="cls_031">sender, RoutedEventArgs e)</span></div>
+<div style="position:absolute;left:72.02px;top:349.13px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:96.02px;top:360.53px" class="cls_031"><span class="cls_031">ListBox1.Items.Add(TextBox1.Text);</span></div>
+<div style="position:absolute;left:72.02px;top:371.81px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:285.05px;top:383.57px" class="cls_002"><span class="cls_002">Listing 10</span></div>
+<div style="position:absolute;left:72.02px;top:430.27px" class="cls_002"><span class="cls_002">When you run the application, you will notice the URL of the Web Browser looks like this:</span></div>
+<div style="position:absolute;left:72.02px;top:443.71px" class="cls_069"><span class="cls_069">file:///C:/Books/Book%20WPF/Chapter%201%20Introducing%20WPF/BrowserAppSample/BrowserAppS</span></div>
+<div style="position:absolute;left:72.02px;top:457.15px" class="cls_069"><span class="cls_069">ample/bin/Debug/BrowserAppSample.xbap</span></div>
+<div style="position:absolute;left:72.02px;top:480.79px" class="cls_002"><span class="cls_002">As you can see in Listing 8, a Page hosts the main window in an XBAP application. When you add some</span></div>
+<div style="position:absolute;left:72.02px;top:494.23px" class="cls_002"><span class="cls_002">text and click on an Add Item button, you will see the text is being added to the ListBox as shown in</span></div>
+<div style="position:absolute;left:72.02px;top:507.67px" class="cls_002"><span class="cls_002">Figure 16. You will also notice that this application is running in a Web Browser and has Home, Refresh,</span></div>
+<div style="position:absolute;left:72.02px;top:521.11px" class="cls_002"><span class="cls_002">Back, Next and other browser functionality.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:16842px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background22.jpg" width=612 height=792></div>
+<div style="position:absolute;left:285.53px;top:360.17px" class="cls_002"><span class="cls_002">Figure 16</span></div>
+<div style="position:absolute;left:72.02px;top:387.29px" class="cls_054"><span class="cls_054">WPF User Control Library</span></div>
+<div style="position:absolute;left:72.02px;top:419.95px" class="cls_002"><span class="cls_002">A UserControl is another type of window, the purpose of UserControl is reusability. It compiles into a</span></div>
+<div style="position:absolute;left:72.02px;top:435.55px" class="cls_002"><span class="cls_002">dynamic linked library (DLL) that can be referenced by other projects. That means the output of</span></div>
+<div style="position:absolute;left:72.02px;top:451.15px" class="cls_002"><span class="cls_002">UserControl is DLL that can be reused in the same or other projects.</span></div>
+<div style="position:absolute;left:72.02px;top:476.11px" class="cls_002"><span class="cls_002">What is DLL?</span></div>
+<div style="position:absolute;left:72.02px;top:491.71px" class="cls_002"><span class="cls_002">It stands for </span><span class="cls_016">Dynamic-link library</span><span class="cls_002">. It is a collection of classes (code and data) that can be shared</span></div>
+<div style="position:absolute;left:72.02px;top:507.31px" class="cls_002"><span class="cls_002">between Windows applications. Let’s say, we need one reusable application to browse files on a system.</span></div>
+<div style="position:absolute;left:72.02px;top:522.67px" class="cls_002"><span class="cls_002">From the UI perspective, there will be a browse button to select a file from a location and a label to</span></div>
+<div style="position:absolute;left:72.02px;top:538.15px" class="cls_002"><span class="cls_002">display the selected file name.</span></div>
+<div style="position:absolute;left:72.02px;top:563.47px" class="cls_002"><span class="cls_002">One way to do this is to copy and paste the same code every time you need this functionality. Or you</span></div>
+<div style="position:absolute;left:72.02px;top:579.10px" class="cls_002"><span class="cls_002">can simply build a user control and use that control every time you need that functionality. That means</span></div>
+<div style="position:absolute;left:72.02px;top:594.58px" class="cls_002"><span class="cls_002">you only once have to develop such an app and can reuse it as per requirements. We can reuse such</span></div>
+<div style="position:absolute;left:72.02px;top:610.18px" class="cls_002"><span class="cls_002">functionalities within the same application as well as in different applications.</span></div>
+<div style="position:absolute;left:72.02px;top:635.14px" class="cls_002"><span class="cls_002">And we can achieve this with the WPF User Control Library. This section has two parts. In the first part,</span></div>
+<div style="position:absolute;left:72.02px;top:650.74px" class="cls_002"><span class="cls_002">we will build a WPF User Control which will create a DLL file for us. In the second part, we will discuss</span></div>
+<div style="position:absolute;left:72.02px;top:666.34px" class="cls_002"><span class="cls_002">how to use this DLL in other WPF applications.</span></div>
+<div style="position:absolute;left:72.02px;top:691.66px" class="cls_014"><span class="cls_014">The XamlFileBrowser Control</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:17644px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background23.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:95.18px" class="cls_002"><span class="cls_002">Let’s name our application. XamlFileBrowser sounds great. This app allows users to browse files on their</span></div>
+<div style="position:absolute;left:72.02px;top:110.54px" class="cls_002"><span class="cls_002">machine. Follow the same steps as usual. Create a new project in Visual Studio 2019 and select WPF</span></div>
+<div style="position:absolute;left:72.02px;top:126.02px" class="cls_002"><span class="cls_002">User Control Library from Installed templates. Click the next button, as shown in Figure 17.</span></div>
+<div style="position:absolute;left:285.41px;top:437.35px" class="cls_002"><span class="cls_002">Figure 17</span></div>
+<div style="position:absolute;left:72.02px;top:464.95px" class="cls_002"><span class="cls_002">Specify the name for your project. Then click the Create button.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:18446px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background24.jpg" width=612 height=792></div>
+<div style="position:absolute;left:285.41px;top:367.25px" class="cls_002"><span class="cls_002">Figure 18</span></div>
+<div style="position:absolute;left:72.02px;top:394.49px" class="cls_002"><span class="cls_002">This action creates the WPF User Control Library App.</span></div>
+<div style="position:absolute;left:72.02px;top:420.67px" class="cls_002"><span class="cls_002">You will see UserControl1.xaml file has been added to the project. The contents of the control look like</span></div>
+<div style="position:absolute;left:72.02px;top:435.43px" class="cls_002"><span class="cls_002">Listing 11 where you can see the root element of the control is UserControl instead of a window.</span></div>
+<div style="position:absolute;left:72.02px;top:459.79px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">UserControl </span><span class="cls_030">x</span><span class="cls_028">:</span><span class="cls_030">Class</span><span class="cls_028">="XamlFileBrowser.UserControl1"</span></div>
+<div style="position:absolute;left:144.14px;top:471.07px" class="cls_030"><span class="cls_030">xmlns</span><A HREF="http://schemas.microsoft.com/winfx/2006/xaml/presentation">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</A> </span></div>
+<div style="position:absolute;left:144.14px;top:482.47px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">x</span><A HREF="http://schemas.microsoft.com/winfx/2006/xaml">="http://schemas.microsoft.com/winfx/2006/xaml"</A> </span></div>
+<div style="position:absolute;left:144.14px;top:493.75px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">mc</span><A HREF="http://schemas.openxmlformats.org/markup-">="http://schemas.openxmlformats.org/markup</A>-</span></div>
+<div style="position:absolute;left:72.02px;top:505.75px" class="cls_028"><span class="cls_028">compatibility/2006"</span></div>
+<div style="position:absolute;left:144.14px;top:516.31px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">d</span><A HREF="http://schemas.microsoft.com/expression/blend/2008">="http://schemas.microsoft.com/expression/blend/2008"</A> </span></div>
+<div style="position:absolute;left:144.14px;top:527.71px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">local</span><span class="cls_028">="clr-namespace:XamlFileBrowser"</span></div>
+<div style="position:absolute;left:144.14px;top:538.99px" class="cls_030"><span class="cls_030">mc</span><span class="cls_028">:</span><span class="cls_030">Ignorable</span><span class="cls_028">="d"</span></div>
+<div style="position:absolute;left:144.14px;top:550.99px" class="cls_030"><span class="cls_030">d</span><span class="cls_028">:</span><span class="cls_030">DesignHeight</span><span class="cls_028">="450" </span><span class="cls_030">d</span><span class="cls_028">:</span><span class="cls_030">DesignWidth</span><span class="cls_028">="800"></span></div>
+<div style="position:absolute;left:96.02px;top:561.55px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:96.02px;top:585.10px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:72.02px;top:596.38px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">UserControl</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:285.05px;top:619.30px" class="cls_002"><span class="cls_002">Listing 11</span></div>
+<div style="position:absolute;left:72.02px;top:644.74px" class="cls_016"><span class="cls_016">Designing the XamlFileBrowser Control</span></div>
+<div style="position:absolute;left:72.02px;top:670.30px" class="cls_002"><span class="cls_002">Let’s add a Button and a TextBox element to this user control by dragging and dropping these controls</span></div>
+<div style="position:absolute;left:72.02px;top:685.54px" class="cls_002"><span class="cls_002">from Toolbox or you can code manually as well. Then change the names of the TextBox and the Button</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:19248px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background25.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:95.18px" class="cls_002"><span class="cls_002">controls to </span><span class="cls_023">FBCTextBox </span><span class="cls_002">and </span><span class="cls_023">FBCButton </span><span class="cls_002">respectively. After adjusting the size of controls and page, the</span></div>
+<div style="position:absolute;left:72.02px;top:110.42px" class="cls_002"><span class="cls_002">final design of the user control looks like Figure 19.</span></div>
+<div style="position:absolute;left:285.53px;top:190.22px" class="cls_002"><span class="cls_002">Figure 19</span></div>
+<div style="position:absolute;left:72.02px;top:215.54px" class="cls_002"><span class="cls_002">You may have noticed from Figure 14; We even have changed the background color of the page to Light-</span></div>
+<div style="position:absolute;left:72.02px;top:231.02px" class="cls_002"><span class="cls_002">blue by using a </span><span class="cls_016">Background </span><span class="cls_002">property of user control.</span></div>
+<div style="position:absolute;left:72.02px;top:256.61px" class="cls_002"><span class="cls_002">Now double click on Textbox to add TextChanged event-handler for Textbox and double click on a</span></div>
+<div style="position:absolute;left:72.02px;top:272.21px" class="cls_002"><span class="cls_002">button to add a click event-handler for Button. The final XAML code would look like Listing 12.</span></div>
+<div style="position:absolute;left:72.02px;top:296.45px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">UserControl </span><span class="cls_030">x</span><span class="cls_028">:</span><span class="cls_030">Class</span><span class="cls_028">="XamlFileBrowser.UserControl1"</span></div>
+<div style="position:absolute;left:144.14px;top:307.73px" class="cls_030"><span class="cls_030">xmlns</span><A HREF="http://schemas.microsoft.com/winfx/2006/xaml/presentation">="http://schemas.microsoft.com/winfx/2006/xaml/presentation"</A> </span></div>
+<div style="position:absolute;left:144.14px;top:319.01px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">x</span><A HREF="http://schemas.microsoft.com/winfx/2006/xaml">="http://schemas.microsoft.com/winfx/2006/xaml"</A> </span></div>
+<div style="position:absolute;left:144.14px;top:330.41px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">mc</span><A HREF="http://schemas.openxmlformats.org/markup-">="http://schemas.openxmlformats.org/markup</A>-</span></div>
+<div style="position:absolute;left:72.02px;top:342.41px" class="cls_028"><span class="cls_028">compatibility/2006"</span></div>
+<div style="position:absolute;left:144.14px;top:352.97px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">d</span><A HREF="http://schemas.microsoft.com/expression/blend/2008">="http://schemas.microsoft.com/expression/blend/2008"</A> </span></div>
+<div style="position:absolute;left:144.14px;top:364.25px" class="cls_030"><span class="cls_030">xmlns</span><span class="cls_028">:</span><span class="cls_030">local</span><span class="cls_028">="clr-namespace:XamlFileBrowser"</span></div>
+<div style="position:absolute;left:144.14px;top:375.65px" class="cls_030"><span class="cls_030">mc</span><span class="cls_028">:</span><span class="cls_030">Ignorable</span><span class="cls_028">="d"</span></div>
+<div style="position:absolute;left:144.14px;top:387.65px" class="cls_030"><span class="cls_030">d</span><span class="cls_028">:</span><span class="cls_030">DesignHeight</span><span class="cls_028">="35" </span><span class="cls_030">d</span><span class="cls_028">:</span><span class="cls_030">DesignWidth</span><span class="cls_028">="400" </span><span class="cls_030">Background</span><span class="cls_028">="Light Blue"></span></div>
+<div style="position:absolute;left:96.02px;top:398.93px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid </span><span class="cls_030">x</span><span class="cls_028">:</span><span class="cls_030">Name</span><span class="cls_028">="OuterGrid"></span></div>
+<div style="position:absolute;left:120.14px;top:410.35px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">TextBox </span><span class="cls_030">Name</span><span class="cls_028">="FBCTextBox"</span></div>
+<div style="position:absolute;left:174.14px;top:421.03px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="50"</span></div>
+<div style="position:absolute;left:174.14px;top:432.31px" class="cls_030"><span class="cls_030">HorizontalAlignment</span><span class="cls_028">="Left"</span></div>
+<div style="position:absolute;left:174.14px;top:443.71px" class="cls_030"><span class="cls_030">Margin</span><span class="cls_028">="5,5,0,0"</span></div>
+<div style="position:absolute;left:174.14px;top:454.99px" class="cls_030"><span class="cls_030">Text</span><span class="cls_028">="TextBox"</span></div>
+<div style="position:absolute;left:174.14px;top:466.39px" class="cls_030"><span class="cls_030">TextChanged</span><span class="cls_028">="FBCTextBox_TextChanged"</span></div>
+<div style="position:absolute;left:174.14px;top:477.79px" class="cls_030"><span class="cls_030">TextWrapping</span><span class="cls_028">="Wrap"</span></div>
+<div style="position:absolute;left:174.14px;top:489.79px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="284" /></span></div>
+<div style="position:absolute;left:120.14px;top:500.95px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Button </span><span class="cls_030">Name</span><span class="cls_028">="FBCButton"</span></div>
+<div style="position:absolute;left:168.14px;top:511.51px" class="cls_030"><span class="cls_030">Click</span><span class="cls_028">="FBCButton_Click"</span></div>
+<div style="position:absolute;left:168.14px;top:522.91px" class="cls_030"><span class="cls_030">Content</span><span class="cls_028">="Browse"</span></div>
+<div style="position:absolute;left:168.14px;top:534.19px" class="cls_030"><span class="cls_030">HorizontalAlignment</span><span class="cls_028">="Left"</span></div>
+<div style="position:absolute;left:168.14px;top:545.59px" class="cls_030"><span class="cls_030">Margin</span><span class="cls_028">="300,5,0,0"</span></div>
+<div style="position:absolute;left:168.14px;top:556.87px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="50"</span></div>
+<div style="position:absolute;left:168.14px;top:568.15px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="83" /></span></div>
+<div style="position:absolute;left:108.14px;top:580.30px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:72.02px;top:591.10px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">UserControl</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:285.05px;top:614.50px" class="cls_002"><span class="cls_002">Listing 12</span></div>
+<div style="position:absolute;left:72.02px;top:639.94px" class="cls_002"><span class="cls_002">Now, let’s add logic in the code-behind of user control.</span></div>
+<div style="position:absolute;left:72.02px;top:665.50px" class="cls_002"><span class="cls_002">First, Let’s add a public property and name it as FileName then add getter and setter which will return</span></div>
+<div style="position:absolute;left:72.02px;top:680.98px" class="cls_002"><span class="cls_002">and set the text of the FBCTextBox control. The property code is listed in Listing 13:</span></div>
+<div style="position:absolute;left:72.02px;top:705.34px" class="cls_028"><span class="cls_028">public string </span><span class="cls_031">FileName</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:20050px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background26.jpg" width=612 height=792></div>
+<div style="position:absolute;left:120.14px;top:94.70px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:144.14px;top:105.98px" class="cls_028"><span class="cls_028">get </span><span class="cls_031">=> FBCTextBox.Text;</span></div>
+<div style="position:absolute;left:144.14px;top:117.26px" class="cls_028"><span class="cls_028">set </span><span class="cls_031">=> FBCTextBox.Text = value;</span></div>
+<div style="position:absolute;left:120.14px;top:128.06px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:285.05px;top:140.42px" class="cls_002"><span class="cls_002">Listing 13</span></div>
+<div style="position:absolute;left:72.02px;top:189.02px" class="cls_002"><span class="cls_002">Now, on the FBCButton’s click event-handler, we need to add logic to browse files from the system. It</span></div>
+<div style="position:absolute;left:72.02px;top:204.38px" class="cls_002"><span class="cls_002">can be done with OpenFileDialog control and finally assign FileName property, as per Listing 14.</span></div>
+<div style="position:absolute;left:72.02px;top:228.62px" class="cls_028"><span class="cls_028">private void </span><span class="cls_031">FBCButton_Click(</span><span class="cls_028">object </span><span class="cls_031">sender, </span><span class="cls_042">RoutedEventArgs </span><span class="cls_031">e)</span></div>
+<div style="position:absolute;left:72.02px;top:240.74px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:96.02px;top:251.33px" class="cls_028"><span class="cls_028">var </span><span class="cls_031">openFileDlg = </span><span class="cls_028">new </span><span class="cls_031">Microsoft.Win32.</span><span class="cls_042">OpenFileDialog</span><span class="cls_031">();</span></div>
+<div style="position:absolute;left:96.02px;top:262.61px" class="cls_028"><span class="cls_028">if </span><span class="cls_031">(openFileDlg.ShowDialog() == </span><span class="cls_028">true</span><span class="cls_031">)</span></div>
+<div style="position:absolute;left:168.14px;top:274.85px" class="cls_028"><span class="cls_028">this</span><span class="cls_031">.FileName = openFileDlg.FileName;</span></div>
+<div style="position:absolute;left:72.02px;top:286.13px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:285.05px;top:309.53px" class="cls_002"><span class="cls_002">Listing 14</span></div>
+<div style="position:absolute;left:72.02px;top:335.09px" class="cls_002"><span class="cls_002">In the end, we need an event. Let’s call it FileNameChanged and map it to the TextChanged event of the</span></div>
+<div style="position:absolute;left:72.02px;top:350.45px" class="cls_002"><span class="cls_002">TextBox as listed in Listing 15. Notice that we have set e.Handle to true. This indicates that the event-</span></div>
+<div style="position:absolute;left:72.02px;top:365.93px" class="cls_002"><span class="cls_002">handler has already executed an event, so it wouldn’t need to be processed any further.</span></div>
+<div style="position:absolute;left:72.02px;top:390.89px" class="cls_028"><span class="cls_028">public event </span><span class="cls_042">EventHandler</span><span class="cls_031">&lt;</span><span class="cls_042">EventArgs</span><span class="cls_031">> FileNameChanged;</span></div>
+<div style="position:absolute;left:72.02px;top:402.17px" class="cls_028"><span class="cls_028">private void </span><span class="cls_031">FBCTextBox_TextChanged(</span><span class="cls_028">object </span><span class="cls_031">sender, </span><span class="cls_042">TextChangedEventArgs </span><span class="cls_031">e)</span></div>
+<div style="position:absolute;left:72.02px;top:413.59px" class="cls_031"><span class="cls_031">{</span></div>
+<div style="position:absolute;left:144.14px;top:424.15px" class="cls_031"><span class="cls_031">e.Handled</span></div>
+<div style="position:absolute;left:210.17px;top:424.15px" class="cls_031"><span class="cls_031">= </span><span class="cls_028"> true</span><span class="cls_031">;</span></div>
+<div style="position:absolute;left:144.14px;top:435.55px" class="cls_031"><span class="cls_031">FileNameChanged?.Invoke(</span><span class="cls_028">this</span><span class="cls_031">, EventArgs.Empty);</span></div>
+<div style="position:absolute;left:72.02px;top:446.95px" class="cls_031"><span class="cls_031">}</span></div>
+<div style="position:absolute;left:285.05px;top:471.07px" class="cls_002"><span class="cls_002">Listing 15</span></div>
+<div style="position:absolute;left:72.02px;top:496.63px" class="cls_002"><span class="cls_002">In this User Control, whenever you type a filename or browse a file from the system, the public</span></div>
+<div style="position:absolute;left:72.02px;top:512.11px" class="cls_002"><span class="cls_002">FileName property will be updated with the text of the TextBox and we can use this FileName property</span></div>
+<div style="position:absolute;left:72.02px;top:527.47px" class="cls_002"><span class="cls_002">to display the name of the file.</span></div>
+<div style="position:absolute;left:72.02px;top:552.91px" class="cls_002"><span class="cls_002">That’s it. Now build the application that will create XamlFileBrowser.dll for us.</span></div>
+<div style="position:absolute;left:72.02px;top:578.38px" class="cls_002"><span class="cls_002">Then go to the bin folder of this project to locate this DLL. This is the library we are going to use in our</span></div>
+<div style="position:absolute;left:72.02px;top:593.74px" class="cls_002"><span class="cls_002">other WPF applications whenever we need a File Browser control.</span></div>
+<div style="position:absolute;left:72.02px;top:619.18px" class="cls_064"><span class="cls_064">XAMLFileBrowser User Control’s Host Application</span></div>
+<div style="position:absolute;left:72.02px;top:646.18px" class="cls_002"><span class="cls_002">Using a WPF User Control in XAML is pretty simple. First, add a reference for a DLL and then update the</span></div>
+<div style="position:absolute;left:72.02px;top:661.42px" class="cls_002"><span class="cls_002">namespace.</span></div>
+<div style="position:absolute;left:72.02px;top:686.86px" class="cls_002"><span class="cls_002">Let’s create a WPF application in the same solution.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:20852px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background27.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:95.18px" class="cls_002"><span class="cls_002">Right-click on the Solution name in Solution Explorer and select Add >> New Project as you can see in</span></div>
+<div style="position:absolute;left:72.02px;top:110.42px" class="cls_002"><span class="cls_002">Figure 20.</span></div>
+<div style="position:absolute;left:285.53px;top:461.35px" class="cls_002"><span class="cls_002">Figure 20</span></div>
+<div style="position:absolute;left:72.02px;top:486.91px" class="cls_002"><span class="cls_002">On the next step, select </span><span class="cls_016">WPF Application </span><span class="cls_002">from the </span><span class="cls_016">Project Templates </span><span class="cls_002">and give the application a name</span></div>
+<div style="position:absolute;left:72.02px;top:502.39px" class="cls_022"><span class="cls_022">XamlFileBrowserHostSample </span><span class="cls_002">as you can see in Figure 21.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:21654px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background28.jpg" width=612 height=792></div>
+<div style="position:absolute;left:285.53px;top:361.97px" class="cls_002"><span class="cls_002">Figure 21</span></div>
+<div style="position:absolute;left:72.02px;top:412.75px" class="cls_002"><span class="cls_002">Click on a Create Button to proceed.</span></div>
+<div style="position:absolute;left:72.02px;top:438.19px" class="cls_002"><span class="cls_002">First thing you want to do is Right-click on the </span><span class="cls_016">XamlFileBrowserHostSample </span><span class="cls_002">project and select </span><span class="cls_016">“Set as</span></div>
+<div style="position:absolute;left:72.02px;top:453.67px" class="cls_016"><span class="cls_016">Startup Project”</span><span class="cls_002">, as shown in Figure 22. This is important because when the solution has multiple</span></div>
+<div style="position:absolute;left:72.02px;top:469.15px" class="cls_002"><span class="cls_002">projects, we need to ensure that solution knows which project to execute first when we run the project.</span></div>
+<div style="position:absolute;left:285.53px;top:596.74px" class="cls_002"><span class="cls_002">Figure 22</span></div>
+<div style="position:absolute;left:72.02px;top:622.06px" class="cls_002"><span class="cls_002">Now we’re going to add a reference to the </span><span class="cls_016">XamlFileBrowserHostSample</span><span class="cls_002">. Right-click on the</span></div>
+<div style="position:absolute;left:72.02px;top:637.54px" class="cls_016"><span class="cls_016">“Dependencies” </span><span class="cls_002">and select </span><span class="cls_016">“  dd Project Reference” </span><span class="cls_002">dialogue is shown in Figure 23.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:22456px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background29.jpg" width=612 height=792></div>
+<div style="position:absolute;left:285.53px;top:324.17px" class="cls_002"><span class="cls_002">Figure 23</span></div>
+<div style="position:absolute;left:72.02px;top:349.73px" class="cls_002"><span class="cls_002">After clicking on </span><span class="cls_016">Add Project Reference </span><span class="cls_002">Menu, it will open a dialogue box where you will be shown a list</span></div>
+<div style="position:absolute;left:72.02px;top:365.09px" class="cls_002"><span class="cls_002">of DLLs. simply select a DLL from the list or you can browse the DLL from the system if it is not listed. For</span></div>
+<div style="position:absolute;left:72.02px;top:380.57px" class="cls_002"><span class="cls_002">our project, we have XamlFileBrowser.dll available on the list. So we need to select the same and click</span></div>
+<div style="position:absolute;left:72.02px;top:396.05px" class="cls_002"><span class="cls_002">on an OK button. Which will add the DLL to </span><span class="cls_016">XamlFileBrowserHostSample </span><span class="cls_002">project. Follow instructions as</span></div>
+<div style="position:absolute;left:72.02px;top:411.43px" class="cls_002"><span class="cls_002">per Figure 24.</span></div>
+<div style="position:absolute;left:285.53px;top:677.02px" class="cls_002"><span class="cls_002">Figure 24</span></div>
+<div style="position:absolute;left:72.02px;top:702.34px" class="cls_002"><span class="cls_002">Now </span><span class="cls_016">build </span><span class="cls_002">the solution by hitting F6.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:23258px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background30.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:95.18px" class="cls_002"><span class="cls_002">At last, </span><span class="cls_016">XamlFileBrowser </span><span class="cls_002">user control will be available to use. In the </span><span class="cls_016">MainWindow.XAML </span><span class="cls_002">file, type</span></div>
+<div style="position:absolute;left:72.02px;top:110.54px" class="cls_023"><span class="cls_023">xmlns:UC= </span><span class="cls_002">in the windows root element attributes and at the bottom of the available namespace, you</span></div>
+<div style="position:absolute;left:72.02px;top:126.02px" class="cls_002"><span class="cls_002">will see </span><span class="cls_023">XamlFileBrowser</span><span class="cls_002">. Select that from the list, as shown in Figure 25.</span></div>
+<div style="position:absolute;left:285.41px;top:294.41px" class="cls_002"><span class="cls_002">Figure 25</span></div>
+<div style="position:absolute;left:72.02px;top:319.97px" class="cls_002"><span class="cls_002">This action will add the following line to the XAML file.</span></div>
+<div style="position:absolute;left:72.02px;top:345.17px" class="cls_047"><span class="cls_047">xmlns</span><span class="cls_037">:</span><span class="cls_047">UC</span><span class="cls_037">="clr-namespace:XamlFileBrowser;assembly=XamlFileBrowser"</span></div>
+<div style="position:absolute;left:72.02px;top:369.89px" class="cls_002"><span class="cls_002">Now we can use </span><span class="cls_016">namespace UC </span><span class="cls_002">to create our user control’s instance.   s shown in Listing 16 where we</span></div>
+<div style="position:absolute;left:72.02px;top:385.37px" class="cls_002"><span class="cls_002">have added a User Control, and also sets its Name, Width, Height, and Margin attributes and finally sets</span></div>
+<div style="position:absolute;left:72.02px;top:400.85px" class="cls_002"><span class="cls_002">its FileNameChanged event-handler. We also need to add a Label control to display the name of the file.</span></div>
+<div style="position:absolute;left:96.02px;top:426.07px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Grid </span><span class="cls_030">x</span><span class="cls_028">:</span><span class="cls_030">Name</span><span class="cls_028">="OuterGrid"></span></div>
+<div style="position:absolute;left:120.02px;top:436.63px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">UC</span><span class="cls_028">:</span><span class="cls_029">UserControl1 </span><span class="cls_030">Name</span><span class="cls_028">="FileBrowserUserControl"</span></div>
+<div style="position:absolute;left:180.14px;top:447.91px" class="cls_030"><span class="cls_030">FileNameChanged</span><span class="cls_028">="FileBrowserUserControl_FileNameChanged"</span></div>
+<div style="position:absolute;left:180.14px;top:459.31px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="35"</span></div>
+<div style="position:absolute;left:180.14px;top:471.31px" class="cls_030"><span class="cls_030">Margin</span><span class="cls_028">="26,12,77,264"</span></div>
+<div style="position:absolute;left:180.14px;top:482.59px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="400"/></span></div>
+<div style="position:absolute;left:120.14px;top:493.15px" class="cls_028"><span class="cls_028">&lt;</span><span class="cls_029">Label </span><span class="cls_030">Name</span><span class="cls_028">="label1"</span></div>
+<div style="position:absolute;left:144.14px;top:504.43px" class="cls_030"><span class="cls_030">Content</span><span class="cls_028">="Label"</span></div>
+<div style="position:absolute;left:144.14px;top:515.83px" class="cls_030"><span class="cls_030">Height</span><span class="cls_028">="33"</span></div>
+<div style="position:absolute;left:144.14px;top:527.11px" class="cls_030"><span class="cls_030">HorizontalAlignment</span><span class="cls_028">="Left"</span></div>
+<div style="position:absolute;left:144.14px;top:538.51px" class="cls_030"><span class="cls_030">Margin</span><span class="cls_028">="24,67,0,0"</span></div>
+<div style="position:absolute;left:144.14px;top:549.91px" class="cls_030"><span class="cls_030">VerticalAlignment</span><span class="cls_028">="Top"</span></div>
+<div style="position:absolute;left:144.14px;top:561.19px" class="cls_030"><span class="cls_030">Width</span><span class="cls_028">="408" /></span></div>
+<div style="position:absolute;left:96.02px;top:572.59px" class="cls_028"><span class="cls_028">&lt;/</span><span class="cls_029">Grid</span><span class="cls_028">></span></div>
+<div style="position:absolute;left:285.05px;top:585.10px" class="cls_002"><span class="cls_002">Listing 16</span></div>
+<div style="position:absolute;left:72.02px;top:610.30px" class="cls_002"><span class="cls_002">Listing 17 shows how FileNameChanged event-handler used to display FileName in the Label.</span></div>
+<div style="position:absolute;left:72.02px;top:634.78px" class="cls_037"><span class="cls_037">private void </span><span class="cls_038">FileBrowserUserControl_FileNameChanged(</span><span class="cls_037">object </span><span class="cls_038">sender, </span><span class="cls_045">EventArgs </span><span class="cls_038">e)</span></div>
+<div style="position:absolute;left:72.02px;top:645.82px" class="cls_038"><span class="cls_038">{</span></div>
+<div style="position:absolute;left:93.02px;top:657.10px" class="cls_038"><span class="cls_038">label1.Content = FileBrowserUserControl.FileName;</span></div>
+<div style="position:absolute;left:72.02px;top:668.14px" class="cls_038"><span class="cls_038">}</span></div>
+<div style="position:absolute;left:285.05px;top:679.54px" class="cls_002"><span class="cls_002">Listing 17</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:24060px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background31.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.02px;top:95.18px" class="cls_002"><span class="cls_002">Now if you Build and Run the application, the output would look like Figure 26. If you click on the</span></div>
+<div style="position:absolute;left:72.02px;top:110.54px" class="cls_002"><span class="cls_002">Browse button, it opens the </span><span class="cls_023">OpenFileDialog </span><span class="cls_002">control and lets you browse and select a file. The selected</span></div>
+<div style="position:absolute;left:72.02px;top:126.02px" class="cls_002"><span class="cls_002">file name is added to the label.</span></div>
+<div style="position:absolute;left:285.41px;top:236.66px" class="cls_002"><span class="cls_002">Figure 26</span></div>
+<div style="position:absolute;left:72.02px;top:262.01px" class="cls_054"><span class="cls_054">WPF Custom Control Library</span></div>
+<div style="position:absolute;left:72.02px;top:294.41px" class="cls_002"><span class="cls_002">WPF allows you to build custom controls. A custom control is developed for third-party developers to</span></div>
+<div style="position:absolute;left:72.02px;top:307.85px" class="cls_002"><span class="cls_002">customize and then use them in their applications. For example, you could build a cool WPF Chart</span></div>
+<div style="position:absolute;left:72.02px;top:321.29px" class="cls_002"><span class="cls_002">control and sell that as a control to developers who wish to build similar functionality. Then that chart</span></div>
+<div style="position:absolute;left:72.02px;top:334.73px" class="cls_002"><span class="cls_002">control can be reused as per developer’s requirements and they can customize its style, themes, colors,</span></div>
+<div style="position:absolute;left:72.02px;top:348.17px" class="cls_002"><span class="cls_002">and other properties.</span></div>
+<div style="position:absolute;left:72.02px;top:371.69px" class="cls_002"><span class="cls_002">To create a Custom Control Library, you need to select the WPF Custom Control Library as you can see in</span></div>
+<div style="position:absolute;left:72.02px;top:385.13px" class="cls_002"><span class="cls_002">Figure 27. We will discuss custom controls in more detail in the coming chapter.</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:24862px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="d07e01fc-1e2e-11ec-a980-0cc47a792c0a_id_d07e01fc-1e2e-11ec-a980-0cc47a792c0a_files/background32.jpg" width=612 height=792></div>
+<div style="position:absolute;left:285.41px;top:429.79px" class="cls_002"><span class="cls_002">Figure 27</span></div>
+<div style="position:absolute;left:72.02px;top:454.75px" class="cls_011"><span class="cls_011">Summary</span></div>
+<div style="position:absolute;left:72.02px;top:493.27px" class="cls_002"><span class="cls_002">This chapter is an introduction to WPF. In this chapter, we saw how to create our first WPF application</span></div>
+<div style="position:absolute;left:72.02px;top:508.75px" class="cls_002"><span class="cls_002">using Visual Studio 2019. We also saw various application types and Visual Studio templates. In the end,</span></div>
+<div style="position:absolute;left:72.02px;top:524.23px" class="cls_002"><span class="cls_002">we learned how to build simple WPF applications.</span></div>
+<div style="position:absolute;left:72.02px;top:549.55px" class="cls_002"><span class="cls_002">In the next chapter, we are going to focus more on the application model supported by WPF and have</span></div>
+<div style="position:absolute;left:72.02px;top:565.03px" class="cls_002"><span class="cls_002">an in-depth look at various components of a WPF application.</span></div>
+<div style="position:absolute;left:72.02px;top:590.38px" class="cls_011"><span class="cls_011">References</span></div>
+<div style="position:absolute;left:72.02px;top:624.82px" class="cls_002"><span class="cls_002">Download Visual Studio here: </span><A HREF="https://www.visualstudio.com/">https://www.visualstudio.com/</A> </span></div>
+<div style="position:absolute;left:72.02px;top:648.34px" class="cls_002"><span class="cls_002">Learn more about the Visual Studio here: </span><A HREF="https://visualstudio.microsoft.com/vs/getting-started/">https://visualstudio.microsoft.com/vs/getting-started/</A> </span></div>
+</div>
+
+</body>
+</html>
